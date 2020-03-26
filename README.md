@@ -24,7 +24,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Basic Commands
 ```
-- Print `Go Environment Variables`:
+- Print `Environment Variables`:
     ```sh
     go env
     ```
