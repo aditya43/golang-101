@@ -16,10 +16,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Basics](#basics)
     ```diff
     + Packages
-    - Executable Packages
-    - Library Packages
-
+        - Executable Packages
+        - Library Packages
     + Scopes
+    + Renaming Imports
     ```
 
 ----------------------------------------
@@ -64,3 +64,19 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     2. `file`: Imported packages are only visible to the importing file. Each file has to import external packages on it's own.
     3. `func`.
     4. `block`.
+
+```diff
++ Renaming Imports
+```
+- We can rename an imported package name with following syntax:
+    ```go
+    package main
+
+    import "fmt"
+    import adi "fmt"    // Imported "fmt" package and renamed it to "adi"
+
+    func main() {
+        adi.Println("नमस्ते आदित्य")    // This will print "नमस्ते आदित्य"
+    }
+    ```
+- We can import packages with the same name into same file by giving one of them imports a new name.

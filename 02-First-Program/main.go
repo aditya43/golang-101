@@ -24,8 +24,8 @@ func main() {
 	// Println is just an exported function from "fmt" package
 
 	// Exported = First Letter is uppercase
-	fmt.Println("Hello Aditya.")
-	fmt.Println("नमस्ते आदित्य.")
+	fmt.Println("Hello Aditya")
+	fmt.Println("नमस्ते आदित्य")
 
 	// Go cannot call Println function by itself.
 	// That's why you need to call it here.
