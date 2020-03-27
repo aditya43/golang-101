@@ -1,4 +1,4 @@
-# Go Language :beer:
+# :beer: Go Language :beer:
 My personal notes and projects.
 
 ## Author
