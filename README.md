@@ -16,7 +16,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Basics](#basics)
     ```diff
     + Packages
-    + Executable Packages
+    - Executable Packages
+    - Library Packages
     ```
 
 ----------------------------------------
@@ -33,7 +34,21 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Package contains multiple `Go` files belonging to same folder.
 
 ```diff
-+ Executable Packages
+- Executable Packages
 ```
 - It's name should always be `package main`.
 - `Executable Package` should also contain `main()` function and that too only once.
+- These are created only for `running` it as a Go program.
+- These cannot be imported into a Go program.
+- Package name should be `main`.
+
+```diff
+- Library Packages
+```
+- Almost all `Go Standard Library Packages` are of type `Library Packages`.
+- They are reusable packages.
+- They are not executable packages. So we can't run them.
+- We can only `import` them.
+- These are created only for `reusability` purposes.
+- Package name can have any name.
+- Doesn't need to have function named `main()`. To avoid confusion, it's better not to have function named `main()` in a reusable package.
