@@ -1,4 +1,4 @@
-# Cheatsheet: First Go Program
+# First Go Program & Basics
 
 ## BUILDING & RUNNING GO PROGRAMS:
 
