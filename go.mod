@@ -1,6 +1,6 @@
-module github.com/inancgumus/learngo
+module github.com/aditya43/golang
 
-go 1.14.1
+go 1.23
 
 require (
 	github.com/fatih/color v1.9.0
