@@ -1,5 +1,8 @@
 # Go Workspace - Custom created by Aditya
-00-GoWorkSpace/
+00-GoWorkSpace
+# 00-GoWorkSpace/cache
+# 00-GoWorkSpace/pkg
+# 00-GoWorkSpace/src
 
 # Binaries for programs and plugins
 *.exe
