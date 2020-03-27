@@ -1,4 +1,4 @@
-# The Go Programming Language :beer:
+# Go Language :beer:
 My personal notes and projects.
 
 ## Author
