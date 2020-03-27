@@ -20,6 +20,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Library Packages
     + Scopes
     + Renaming Imports
+    + Exporting
     ```
 
 ----------------------------------------
@@ -80,3 +81,20 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 - We can import packages with the same name into same file by giving one of them imports a new name.
+
+```diff
++ Exporting
+```
+- To export a name in Go, just make it's **first letter** an **uppercase letter**.
+- For e.g.
+    ```go
+    package aditest
+
+    func Adi() { // 'Adi()' will be exported and will be available throughout 'aditest' package
+        // Code..
+    }
+
+    func adiNew() { // 'adiNew()' will not be exported since it's name doesn't start with uppercase letter.
+        // Code
+    }
+    ```
