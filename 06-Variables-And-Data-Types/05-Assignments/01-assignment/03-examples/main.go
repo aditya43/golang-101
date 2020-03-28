@@ -31,8 +31,7 @@ func main() {
 
 	// save the previous value of the variable
 	// to a new variable
-	var prevName string
-	prevName = name
+	prevName := name
 
 	// overwrite the value of the original variable
 	// by assigning to it
