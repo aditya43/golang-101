@@ -26,7 +26,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Variables
     + Blank Identifier
     ```
-- [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)
+- [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
 ----------------------------------------
 
