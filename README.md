@@ -30,6 +30,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ----------------------------------------
 
 ## Basics
+- Go is a `strongly typed` language. Because of that, it helps Go compiler to identify many types of errors at `compile time` even before our program is run.
+
 ```diff
 + Packages
 ```
@@ -152,6 +154,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         ```
     * **String**:
         - In Go language, strings are different from other languages like Java, C++, Python, etc.
+        - Strings can't be `null` in Go.
         - It is a sequence of variable-width characters where each and every character is represented by one or more bytes using UTF-8 Encoding.
         - In Go, a `string` is in effect is a read-only slice of bytes (immutable).
         - Or in other words, strings are the immutable chain of arbitrary bytes (including bytes with zero value) and the bytes of the strings can be represented in the Unicode text using UTF-8 encoding.
@@ -166,3 +169,15 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - In Go, we have to **declare** a **variable before** we can **use it**. This is required and necessary for the `compile time safety`.
 - Variables are not created at `compile time`. They are created at `run time`.
 - The unnamed variables are `pointers` (like in C).
+- Once we declare a type for a variable, it cannot be changed later. It is static.
+- **Zero Values**:
+    * When a variable is declared and it isn't assigned any value at the time of declaration, Go will assign a `zero value` to it based on it's variable type.
+    * Type of a variable decides what `zero value` it will take initially when declared (and if it isn't assigned any value at the time of declaration).
+    ```go
+    // Zero Values assigned to variables by Go when they are declared and not assigned any values at the time of declaration.
+    var adiBool bool          // false
+    var adiInt int            // 0
+    var adiFloat float64      // 0
+    var adiStr string         // ""
+    var adiPointer *string    // nil | 'nil' means it doesn't point to any memory location
+    ```

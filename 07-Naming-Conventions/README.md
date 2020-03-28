@@ -55,8 +55,9 @@
 
 ### Variables
 
-- A variable name should always strt with a letter or an undescore character.
+- A variable name should always start with a letter or an undescore character.
 - A variable name should follow general English expression or shorthand.
+- Names can have unicode characters.
 - In relatively simple (less objects and more specific) context, variable name can use simplified form as follows:
     - `user` to `u`
     - `userID` to `uid`
