@@ -24,6 +24,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Data Types
         - Basic Data Types
     + Variables
+        - Zero Values
+        - Unused variables
+        - Multiple Declarations
     + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
@@ -171,9 +174,12 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Variables are not created at `compile time`. They are created at `run time`.
 - The unnamed variables are `pointers` (like in C).
 - Once we declare a type for a variable, it cannot be changed later. It is static.
-- **Zero Values**:
-    * When a variable is declared and it isn't assigned any value at the time of declaration, Go will assign a `zero value` to it based on it's variable type.
-    * Type of a variable decides what `zero value` it will take initially when declared (and if it isn't assigned any value at the time of declaration).
+
+```diff
+- Zero Values
+```
+- When a variable is declared and it isn't assigned any value at the time of declaration, Go will assign a `zero value` to it based on it's variable type.
+- Type of a variable decides what `zero value` it will take initially when declared (and if it isn't assigned any value at the time of declaration).
     ```go
     // Zero Values assigned to variables by Go when they are declared and not assigned any values at the time of declaration.
     var adiBool bool          // false
@@ -182,8 +188,39 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     var adiStr string         // ""
     var adiPointer *string    // nil | 'nil' means it doesn't point to any memory location
     ```
+
+```diff
+- Unused variables
+```
 - **Unused variables in `blocked scope` are not allowed in Go since they cause `maintenance nightmares`.** If we declare a variable in `blocked scope` then we must use it or else completely remove it from the block. We cannot have unused variables declared in `blocked scope` dangling in our source codes. Go throws unused variable errors at `compile time` only.
 - **We should avoid using `package level` variables.** Go doesn't throw `unused variable errors` at `compile time` for variables declared at `package level`.
+
+```diff
+- Multiple Declarations
+```
+- Sometimes it is also called as parallel variable declarations.
+- Declaring multiple variables with `different types` in a single statement:
+    ```go
+    package main
+
+    func main() {
+        var (
+            adiBool bool
+            adiInt int
+            adiFloat float64
+            adiStr string
+            adiPointer *string
+        )
+    }
+    ```
+- Declaring multiple variables with `same type` in a single statement:
+    ```go
+    package main
+
+    func main() {
+        var foo, bar, baz int
+    }
+    ```
 
 ```diff
 + Blank Identifier
