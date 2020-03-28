@@ -148,3 +148,15 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         int      // same size as uint
         uintptr  // an unsigned integer to store the uninterpreted bits of a pointer value
         ```
+    * **Boolean**:
+        ```go
+        bool    // Represents 'true' or 'false'
+        ```
+    * **String**:
+        - In Go language, strings are different from other languages like Java, C++, Python, etc.
+        - It is a sequence of variable-width characters where each and every character is represented by one or more bytes using UTF-8 Encoding.
+        - In Go, a `string` is in effect is a read-only slice of bytes (immutable).
+        - Or in other words, strings are the immutable chain of arbitrary bytes (including bytes with zero value) and the bytes of the strings can be represented in the Unicode text using UTF-8 encoding.
+        - String literals can be created in 2 ways:
+            * **Using double quotes**
+            * **Using backticks**
