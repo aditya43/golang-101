@@ -25,6 +25,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Basic Data Types
     + Variables
     ```
+- [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)
 
 ----------------------------------------
 
@@ -162,6 +163,6 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 + Variables
 ```
 - [Variables in Go Lang](https://blog.learngoprogramming.com/learn-go-lang-variables-visual-tutorial-and-ebook-9a061d29babe)
-- In Go, we have to declare a variable before we can use it.
+- In Go, we have to **declare** a **variable before** we can **use it**. This is required and necessary for the `compile time safety`.
 - Variables are not created at `compile time`. They are created at `run time`.
 - The unnamed variables are `pointers` (like in C).
