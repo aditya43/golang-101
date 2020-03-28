@@ -1,4 +1,4 @@
-# Naming Rules In Go Language
+# Naming Conventions In Go Language
 
 ### File name
 
