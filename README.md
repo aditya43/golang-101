@@ -29,6 +29,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Multiple Declarations
         - Type Inference
         - Short Declaration
+        - Multiple Short Declarations
     + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
@@ -254,6 +255,19 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         someFlag := true // 'var' keyword and 'variable type' is not specified. It works!
     }
     ```
+
+```diff
+- Multiple Short Declarations
+```
+- We can declare and initialize `multiple variables` of `different types` using `short declaration` syntax:
+    ```go
+    package main
+
+    main() {
+        someFlag, age, name := true, 30, "आदित्य" // Multiple variables of different types.
+    }
+    ```
+- In this type of declaration, number of values and number of names must be the same. Otherwise it will result in error.
 
 ```diff
 + Blank Identifier
