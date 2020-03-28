@@ -30,6 +30,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Type Inference
         - Short Declaration
         - Multiple Short Declarations
+        - Redeclarations With Short Declarations
     + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
@@ -268,6 +269,23 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 - In this type of declaration, number of values and number of names must be the same. Otherwise it will result in error.
+
+```diff
+- Redeclarations With Short Declarations
+```
+- `Short Declaration` can initialize new variables and assign to existing variables at the same time.
+- **At least one of the variable in `Short Declaration Redeclaration` must be a new variable**.
+- For e.g.
+    ```go
+    package main
+
+    main() {
+        var someFlag bool
+
+        // someFlag := true // Error! At least one variable must be new to make this work.
+        someFlag, age := true, 30 // This works! Because 'age' is a new variable being declared in the same statement. someFlag will be set (redeclared) to true.
+    }
+    ```
 
 ```diff
 + Blank Identifier
