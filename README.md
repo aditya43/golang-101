@@ -24,6 +24,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Data Types
         - Basic Data Types
     + Variables
+    + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)
 
@@ -181,3 +182,5 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     var adiStr string         // ""
     var adiPointer *string    // nil | 'nil' means it doesn't point to any memory location
     ```
+- **Unused variables in `blocked scope` are not allowed in Go since they cause `maintenance nightmares`.** If we declare a variable in `blocked scope` then we must use it or else completely remove it from the block. We cannot have unused variables declared in `blocked scope` dangling in our source codes. Go throws unused variable errors at `compile time` only.
+- **We should avoid using `package level` variables.** Go doesn't throw `unused variable errors` at `compile time` for variables declared at `package level`.
