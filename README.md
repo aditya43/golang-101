@@ -109,6 +109,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Variables are not created at `compile time`. They are created at `run time`.
 - The unnamed variables are `pointers` (like in C).
 - `literal` means the `value` itself. Unline `variable`, a `literal` doesn't have a name.
+- There are following data types in Go:
+    * **Basic type**: Numbers, strings, and booleans come under this category.
+    * **Aggregate type**: Array and structs come under this category.
+    * **Reference type**: Pointers, slices, maps, functions, and channels come under this * category.
+    * **Interface type**
 
 ```diff
 - Basic Data Types
