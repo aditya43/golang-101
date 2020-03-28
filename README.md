@@ -27,6 +27,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Zero Values
         - Unused variables
         - Multiple Declarations
+        - Type Inference
     + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
@@ -219,6 +220,20 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 
     func main() {
         var foo, bar, baz int
+    }
+    ```
+
+```diff
+- Type Inference
+```
+- `Type Inference` means Go can figure out the type of a variable automatically from it's assigned value.
+- If we are assigning value to a variable at the time of it's declaration, we can ommit it's `type` specification.
+- For e.g.
+    ```go
+    package main
+
+    main() {
+        var someFlag = true // We are not specifying type of 'someFlag' as bool here.
     }
     ```
 
