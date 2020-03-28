@@ -21,8 +21,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Scopes
     + Renaming Imports
     + Exporting
-    + Variables
+    + Data Types
         - Basic Data Types
+    + Variables
     ```
 
 ----------------------------------------
@@ -102,12 +103,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 
 ```diff
-+ Variables
++ Data Types
 ```
-- [Variables in Go Lang](https://blog.learngoprogramming.com/learn-go-lang-variables-visual-tutorial-and-ebook-9a061d29babe)
-- In Go, we have to declare a variable before we can use it.
-- Variables are not created at `compile time`. They are created at `run time`.
-- The unnamed variables are `pointers` (like in C).
 - `literal` means the `value` itself. Unline `variable`, a `literal` doesn't have a name.
 - There are following data types in Go:
     * **Basic type**: Numbers, strings, and booleans come under this category.
@@ -160,3 +157,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - String literals can be created in 2 ways:
             * **Using double quotes**
             * **Using backticks**
+
+```diff
++ Variables
+```
+- [Variables in Go Lang](https://blog.learngoprogramming.com/learn-go-lang-variables-visual-tutorial-and-ebook-9a061d29babe)
+- In Go, we have to declare a variable before we can use it.
+- Variables are not created at `compile time`. They are created at `run time`.
+- The unnamed variables are `pointers` (like in C).
