@@ -184,3 +184,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - **Unused variables in `blocked scope` are not allowed in Go since they cause `maintenance nightmares`.** If we declare a variable in `blocked scope` then we must use it or else completely remove it from the block. We cannot have unused variables declared in `blocked scope` dangling in our source codes. Go throws unused variable errors at `compile time` only.
 - **We should avoid using `package level` variables.** Go doesn't throw `unused variable errors` at `compile time` for variables declared at `package level`.
+
+```diff
++ Blank Identifier
+```
+> “There are only two hard things in Computer Science: cache invalidation and naming things”. Tim Bray quoting Phil Karlton
+- Go doesn't allow `unused variables` in `blocked scope`.
+- To ignore a variable, `Blank Identifier (_)` is used as a variable name in Go.
+- Go compiler will not throw unsed variable error if a blocked scope variable is named `_`.
+- We cannot use value assigned to `_`.
+- It is like a black hole that swallows variable.
+- [Detailed information and usage of Blank Identifier](https://golang.org/doc/effective_go.html#blank)
