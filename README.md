@@ -28,6 +28,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Unused variables
         - Multiple Declarations
         - Type Inference
+        - Short Declaration
     + Blank Identifier
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
@@ -234,6 +235,23 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 
     main() {
         var someFlag = true // We are not specifying type of 'someFlag' as bool here.
+    }
+    ```
+
+```diff
+- Short Declaration
+```
+- With `Type Inference`, Go can figure out variable type based off it's assigned value.
+- In `Short Declaration`, we can declare variable by completely ommitting `var` keyword along with it's variable type.
+- It `declares` and `initializes` the variable.
+- **We cannot use `Short Declaration` syntax to declare variables in `Package Scope`.**
+- At `Package Scope`, all declarations should start with a `keyword`. Since `Short Declaration` syntax doesn't have any `keyword` in it, it doesn't work at `Package Scope`.
+- For e.g.
+    ```go
+    package main
+
+    main() {
+        someFlag := true // 'var' keyword and 'variable type' is not specified. It works!
     }
     ```
 
