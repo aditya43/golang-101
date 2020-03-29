@@ -310,14 +310,20 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     %x  // base 16, lower-­case, two characters per byte
     %X  // base 16, upper-­case, two characters per byte
 
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
     // Boolean
     %t  // the word true or false
+
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
     // General
     %v  // The value in a default format. When printing structs, the plus flag (%+v) adds field names.
     %#v // a Go-syntax repres­ent­ation of the value
     %T  // a Go-syntax repres­ent­ation of the type of the value
     %%  // a literal percent sign; consumes no value
+
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
     // Integer
     %b  // base 2
@@ -329,6 +335,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     %X  // base 16, with upper-case letters for A-F
     %U  // Unicode format: U+1234; same as "­U+%­04X­"
 
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
     // The default format for %v
     bool // %t
     int, int8 // %d
@@ -337,6 +345,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     string // %s
     chan // %p
     pointer // %p
+
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
     // Floati­ng-­point and complex consti­tuents
     %b  // decima­lless scientific notation with exponent a power of two, in the manner of strcon­v.F­orm­atFloat with the 'b' format, e.g. -12345­6p-78
@@ -347,6 +357,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     %g  // %e for large exponents, %f otherwise
     %G  // %E for large exponents, %F otherwise
 
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
     // Floati­ng-­point Precision
     %f      // default width, default precision
     %9f     // width 9, default precision
@@ -354,8 +366,12 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     %9.2f   // width 9, precision 2
     %9.f    // width 9, precision 0
 
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
     // Pointer
     %p  // base 16 notation, with leading 0x
+
+    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
     // Other flags
     +   // always print a sign for numeric values; guarantee ASCII-only output for %q (%+q).
