@@ -32,6 +32,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Multiple Short Declarations
         - Redeclarations With Short Declarations
     + Blank Identifier
+    + fmt.Printf and fmt.Sprintf Formatting
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
@@ -297,3 +298,69 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - We cannot use value assigned to `_`.
 - It is like a black hole that swallows variable.
 - [Detailed information and usage of Blank Identifier](https://golang.org/doc/effective_go.html#blank)
+
+```diff
++ fmt.Printf and fmt.Sprintf Formatting
+```
+- Following formatting can be used with `fmt.Printf` as well as `fmt.Sprintf`:
+    ```go
+    // String and slice of bytes
+    %s  // the uninte­rpreted bytes of the string or slice
+    %q  // a double­-quoted string safely escaped with Go syntax
+    %x  // base 16, lower-­case, two characters per byte
+    %X  // base 16, upper-­case, two characters per byte
+
+    // Boolean
+    %t  // the word true or false
+
+    // General
+    %v  // The value in a default format. When printing structs, the plus flag (%+v) adds field names.
+    %#v // a Go-syntax repres­ent­ation of the value
+    %T  // a Go-syntax repres­ent­ation of the type of the value
+    %%  // a literal percent sign; consumes no value
+
+    // Integer
+    %b  // base 2
+    %c  // the character repres­ented by the corres­ponding Unicode code point
+    %d  // base 10
+    %o  // base 8
+    %q  // a single­-quoted character literal safely escaped with Go syntax
+    %x  // base 16, with lower-case letters for a-f
+    %X  // base 16, with upper-case letters for A-F
+    %U  // Unicode format: U+1234; same as "­U+%­04X­"
+
+    // The default format for %v
+    bool // %t
+    int, int8 // %d
+    uint, uint8 // %d, %x if printed with %#v
+    float32, complex64 // %g
+    string // %s
+    chan // %p
+    pointer // %p
+
+    // Floati­ng-­point and complex consti­tuents
+    %b  // decima­lless scientific notation with exponent a power of two, in the manner of strcon­v.F­orm­atFloat with the 'b' format, e.g. -12345­6p-78
+    %e  // scientific notation, e.g. -1.234­456e+78
+    %E  // scientific notation, e.g. -1.234­456E+78
+    %f  // decimal point but no exponent, e.g. 123.456
+    %F  // synonym for %f
+    %g  // %e for large exponents, %f otherwise
+    %G  // %E for large exponents, %F otherwise
+
+    // Floati­ng-­point Precision
+    %f      // default width, default precision
+    %9f     // width 9, default precision
+    %.2f    // default width, precision 2
+    %9.2f   // width 9, precision 2
+    %9.f    // width 9, precision 0
+
+    // Pointer
+    %p  // base 16 notation, with leading 0x
+
+    // Other flags
+    +   // always print a sign for numeric values; guarantee ASCII-only output for %q (%+q).
+    -   // pad with spaces on the right rather than the left (left-­justify the field).
+    #   // alternate format: add leading 0 for octal (%#o), 0x for hex (%#x); 0X for hex (%#X); suppress 0x for %p (%#p); for %q, print a raw (backq­uoted) string if strcon­v.C­anB­ack­quote returns true;
+    ' ' (space)  // leave a space for elided sign in numbers (% d); put spaces between bytes printing strings or slices in hex (% x, % X).
+    0   // pad with leading zeros rather than spaces; for numbers, this moves the padding after the sign.
+    ```
