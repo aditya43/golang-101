@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	name, last := "carl", "sagan"
+	name, last := "आदित्य", "Hajare"
 
 	// assignment operation using string concat
-	name += " edward"
+	name += " Doe"
 
 	// equals to this:
-	// name = name + " edward"
+	// name = name + " Doe"
 
 	fmt.Println(name + " " + last)
 }

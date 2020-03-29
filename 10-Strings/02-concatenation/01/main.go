@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	name, last := "carl", "sagan"
+	name, last := "आदित्य", "Hajare"
 
 	fmt.Println(name + " " + last)
 }
