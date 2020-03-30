@@ -37,6 +37,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 - [Type System In Go](type-system-in-go)
     ```diff
+    + Important Links
     + Predeclared Types
     + Defined Types
     + Aliased Types
@@ -394,6 +395,18 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - In runtime, when `overflows` occurs:
     * `integer` wrap arounds and go to their minimum and maximum values.
     * `float` wrap arounds to `positive infinity` or `negative infinity`.
+
+```diff
++ Important Links
+```
+- [What is Binary?](https://simplicable.com/new/binary)
+- [What's a Bit](https://en.wikipedia.org/wiki/Bit)
+- [What's a Byte](https://en.wikipedia.org/wiki/Byte)
+- [How old school graphics worked? PART 1](https://www.youtube.com/watch?v=Tfh0ytz8S0k)
+- [How old school graphics worked? PART 2](https://www.youtube.com/watch?v=_rsycfDliZU)
+- [Stackoverflow: What actually is a Byte Stream?](https://softwareengineering.stackexchange.com/questions/216597/what-is-a-byte-stream-actually/216600#216600)
+- [Why Byte but not uint8?](https://github.com/golang/go/issues/22180)
+
 ```diff
 + Predeclared Types
 ```
