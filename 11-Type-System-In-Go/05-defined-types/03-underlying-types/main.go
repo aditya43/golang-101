@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"https://github.com/aditya43/golang/11-Type-System-In-Go/05-defined-types/03-underlying-types/weights"
+	"github.com/aditya43/golang/11-Type-System-In-Go/05-defined-types/03-underlying-types/weights"
 )
 
 type (
@@ -23,6 +23,8 @@ func main() {
 		apples Kilogram = 5
 		truck  Ton      = 10
 	)
+
+	_ = salt // Just to suppress warning above
 
 	// types with different names cannot be used together
 	// salt = apples
@@ -55,7 +57,9 @@ func main() {
 	type myGram weights.Gram
 
 	var pepper myGram = 20
+	_ = pepper // Just to suppress warning above
 	pepper = myGram(salt)
 
 	fmt.Printf("Type of pepper      : %T\n", pepper)
+
 }
