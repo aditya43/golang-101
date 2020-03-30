@@ -33,11 +33,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Redeclarations With Short Declarations
     + Blank Identifier
     + fmt.Printf and fmt.Sprintf Formatting
+    ```
+- [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
+- [Type System In Go](type-system-in-go)
+    ```diff
     + Predeclared Types
     + Defined Types
     + Aliased Types
     ```
-- [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
 ----------------------------------------
 
@@ -384,6 +387,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     0   // pad with leading zeros rather than spaces; for numbers, this moves the padding after the sign.
     ```
 
+----------------------------------------
+
+## Type System In Go
+- At `compile time`, a Go `compiler` can catch `overflow errors`.
+- In runtime, when `overflows` occurs:
+    * `integer` wrap arounds and go to their minimum and maximum values.
+    * `float` wrap arounds to `positive infinity` or `negative infinity`.
 ```diff
 + Predeclared Types
 ```
