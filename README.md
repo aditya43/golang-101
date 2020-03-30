@@ -35,6 +35,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + fmt.Printf and fmt.Sprintf Formatting
     + Predeclared Types
     + Defined Types
+    + Aliased Types
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
@@ -430,3 +431,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     nanoSeconds = Duration(microSeconds) // Works! We are converting 'microSeconds' to 'Named Type' we have created above i.e. 'Duration'
     microSeconds = int64(nanoSeconds) // This also works!
     ```
+
+```diff
++ Aliased Types
+```
+- `byte` and `uint8` are exactly `the same types` just with `diferent names`.
+- `rune` and `int32` are exactly `the same types` just with `diferent names`. i.e. `rune` is an `alias` of `int32`. The `rune` type is used to represent `unicode characters`.
+- `Type Alias` declaration is not for everyday usage. It is mainly used in very huge codebase refactors.
