@@ -392,6 +392,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - It has a `type representation` i.e. how Go see it and how we can use it. In other words, `what values a type can represent`.
 - It has a `size in bytes` i.e. how much space it needs in memory and it also determines the range of values it can represent.
 - Go cannot catch `overflow errors` in `runtime`. For e.g. A `variable` belongs to `runtime` and it's value cannot be known at the `compile time`.
+- In Go, when variable values `overflow`, they gets wrapped around i.e. They get reassigned to the minimum value their `variable type` can represent.
 - Examples of `Predeclared Types`:
     ```go
     bool // 'bool' is a predeclared type and it has following characteristics:
