@@ -34,6 +34,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Blank Identifier
     + fmt.Printf and fmt.Sprintf Formatting
     + Predeclared Types
+    + Defined Types
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
@@ -404,4 +405,28 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     // Name: int
     // Representation: -1, 0, 1, 1000000000000000
     // Size: 8 byte
+    ```
+
+```diff
++ Defined Types
+```
+- **A `Defined Type` is also called as `Named Type`.**
+- A `Defined Type` can only be created from another existing `Type`.
+- We need to give a new name to newly created type.
+- Newly `Defined Type` can optionally have it's own `methods`.
+- A `type` can be `converted` to `another type` if they `share` the `same underlying type` and vice versa.
+- A `defined type` and it's `source type` share the same `underlying type`.
+- For e.g.
+    ```go
+    // 'Duration' is the 'defined type' or 'named type'.
+    // 'int64' is the 'underlying type'.
+    type Duration int64
+
+    // Type conversion
+    var microSeconds int64   // 'microSeconds' variable is of type 'int64'
+    var nanoSeconds Duration // 'nanoSeconds' variable is of type 'Duration'
+
+    nanoSeconds = microSeconds // ERROR! This won't work. To make it work:
+    nanoSeconds = Duration(microSeconds) // Works! We are converting 'microSeconds' to 'Named Type' we have created above i.e. 'Duration'
+    microSeconds = int64(nanoSeconds) // This also works!
     ```
