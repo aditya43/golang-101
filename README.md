@@ -33,6 +33,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Redeclarations With Short Declarations
     + Blank Identifier
     + fmt.Printf and fmt.Sprintf Formatting
+    + Predeclared Types
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 
@@ -379,4 +380,26 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     #   // alternate format: add leading 0 for octal (%#o), 0x for hex (%#x); 0X for hex (%#X); suppress 0x for %p (%#p); for %q, print a raw (backq­uoted) string if strcon­v.C­anB­ack­quote returns true;
     ' ' (space)  // leave a space for elided sign in numbers (% d); put spaces between bytes printing strings or slices in hex (% x, % X).
     0   // pad with leading zeros rather than spaces; for numbers, this moves the padding after the sign.
+    ```
+
+```diff
++ Predeclared Types
+```
+- A `predeclared type` is a `built-in type` that we can use everywhere without `importing` any `package`.
+- A `built-in type` means it's a `core feature of Go` i.e. it comes with `compiler` itself.
+- A `predeclared type` has a name and we can use it in `any scope`.
+- We don't have to `declare` a `predeclared type` before using it.
+- It has a `type representation` i.e. how Go see it and how we can use it. In other words, `what values a type can represent`.
+- It has a `size in bytes` i.e. how much space it needs in memory and it also determines the range of values it can represent.
+- Examples of `Predeclared Types`:
+    ```go
+    bool // 'bool' is a predeclared type and it has following characteristics:
+    // Name: bool
+    // Representation: 'true' or 'false'
+    // Size: 1 byte
+
+    int // 'int' is a predeclared type and it has following characteristics:
+    // Name: int
+    // Representation: -1, 0, 1, 1000000000000000
+    // Size: 8 byte
     ```
