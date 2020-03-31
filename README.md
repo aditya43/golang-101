@@ -47,6 +47,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Constant Types
     + Multiple Constants Declaration
     + Typeless Or Untyped Constants
+    + Default Types
     ```
 
 ----------------------------------------
@@ -561,3 +562,30 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         var r rune     =  min  // Type of constant 'min' = rune
     }
     ```
+
+```diff
++ Default Types
+```
+- **`Conversion` only happens when `a type is needed`.**
+- Go `converts` a `typeless constant` to a `typed` value when a `type` is needed.
+- For e.g.
+    ```go
+    func main() {
+        const min int32 = 1000
+
+        max := 5 + min // Type of 'max' is 'int32'
+                       // Internally this happens: max := int32(5) + min
+    }
+    ```
+- Go `implicitly converts` the `typeless constant` to a `typed value`.
+- For e.g.
+    ```go
+    func main() {
+        const min = 1000
+
+        max := 5 + min // Type of 'max' is 'int'
+                       // Internally this happens: max := int(5) + int(min)
+    }
+    ```
+- An `untyped constant` has a `default type`.
+- Go `evaluates the expression` then it `converts` the `resulting typeless value` to its `default value`.
