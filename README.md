@@ -520,3 +520,23 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Multiple Constants Declaration
 ```
+- `Constants` get their `types` and `expressions` from `the previous constant`.
+- We can declare `multiple constants` in a single go as below:
+    ```go
+    func main() {
+        // Multiple constants of same type in one go
+        const min, max int = 1, 1000
+
+        // Declaring in group
+        const (
+            min int = 1
+            max int = 1000
+        )
+
+        // Constants get their types and expressions from the previous constant
+        const (
+            min int = 1000     // 1000
+            max                // 1000
+        )
+    }
+    ```
