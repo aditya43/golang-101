@@ -46,6 +46,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Constant Types
     + Multiple Constants Declaration
+    + Typeless Or Untyped Constants
     ```
 
 ----------------------------------------
@@ -538,5 +539,25 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
             min int = 1000     // 1000
             max                // 1000
         )
+    }
+    ```
+
+```diff
++ Typeless Or Untyped Constants
+```
+- When we declare `a constant without a type`, it becomes `untyped constant (typeless constant)`.
+- All `basic literals` are also `typeless`. They all are `typeless constant values`.
+- A `constant with a type` can only be used with `a value` of `the same type`.
+- The `untyped numeric constant` can be used with `all numeric values` together.
+- For e.g.
+    ```go
+    func main() {
+        const min = 42
+
+        var i int      =  min  // Type of constant 'min' = int
+        var f float64  =  min  // Type of constant 'min' = float64
+        var b byte     =  min  // Type of constant 'min' = byte
+        var j int32    =  min  // Type of constant 'min' = int32
+        var r rune     =  min  // Type of constant 'min' = rune
     }
     ```
