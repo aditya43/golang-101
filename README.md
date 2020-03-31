@@ -42,6 +42,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Defined Types
     + Aliased Types
     ```
+- [Constants](constants)
 
 ----------------------------------------
 
@@ -461,3 +462,23 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `byte` and `uint8` are exactly `the same types` just with `diferent names`.
 - `rune` and `int32` are exactly `the same types` just with `diferent names`. i.e. `rune` is an `alias` of `int32`. The `rune` type is used to represent `unicode characters`.
 - `Type Alias` declaration is not for everyday usage. It is mainly used in very huge codebase refactors.
+
+----------------------------------------
+
+## Constants
+- `Constants` belong to `compile time`. They must be initilized with value when they are declared.
+- `Constants` are created at `compile time`. In the `run time`, Go just transforms it into a `value`.
+- **Unnamed constants**: All `basic literals` are `unnamed constants`. Following are examples of `basic literals`:
+    ```go
+    // Unnamed constants
+    1
+    3.14
+    "hello"
+    true
+    false
+    ```
+- **Named Constants**: All `named constants` will be replaced to their `values` in `runtime`. They need to be `declared` first.
+- **Untyped Constants**: `Constants` may or may not have a type.
+- If the value is'nt going to change throughout our program's lifetime and we already know the value (if it belongs to compile time) then we should go for `named constants`.
+- Constants are `immutable` i.e. we cannot change their values.
+- We `cannot initialize` a constant to a `runtime value`.
