@@ -35,14 +35,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + fmt.Printf and fmt.Sprintf Formatting
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
-- [Type System In Go](type-system-in-go)
+- [Type System In Go](#type-system-in-go)
     ```diff
     + Important Links
     + Predeclared Types
     + Defined Types
     + Aliased Types
     ```
-- [Constants](constants)
+- [Constants](#constants)
     ```diff
     + Constant Types
     + Multiple Constants Declaration
