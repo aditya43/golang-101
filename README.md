@@ -49,7 +49,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Typeless Or Untyped Constants
     + Default Types
     + IOTA
-    + Common Abbreviations Used In GO
+    + Common Abbreviations Used In Go
     ```
 
 ----------------------------------------
@@ -612,7 +612,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 
 ```diff
-+ Common abbreviations Used In GO
++ Common Abbreviations Used In Go
 ```
 - Following are some of the common Abbreviations used in Go standard libraries:
     ```go
