@@ -48,6 +48,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Multiple Constants Declaration
     + Typeless Or Untyped Constants
     + Default Types
+    + IOTA
     ```
 
 ----------------------------------------
@@ -589,3 +590,22 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - An `untyped constant` has a `default type`.
 - Go `evaluates the expression` then it `converts` the `resulting typeless value` to its `default value`.
+
+```diff
++ IOTA
+```
+- `IOTA` is nothing but a `number generator` for `constants`. In other words, it is ever increasing automatic counter.
+- `IOTA` is built-in `constant generator` which `generates` ever `increasing numbers`.
+- `IOTA` starts at `0`.
+- We can use `expressions` with `IOTA`. So, the other `constants` will `repeat` the `expressions`.
+- We can use blank identifier (_) to adjust the values of constants:
+    ```go
+    func main() {
+        const (
+            EST = -(5 + iota)   // -5
+            _                   // -6 | Discarded/skipped due to blank identifier
+            MST                 // -7
+            PST                 // -8
+        )
+    }
+    ```
