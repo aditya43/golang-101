@@ -482,3 +482,33 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - If the value is'nt going to change throughout our program's lifetime and we already know the value (if it belongs to compile time) then we should go for `named constants`.
 - Constants are `immutable` i.e. we cannot change their values.
 - We `cannot initialize` a constant to a `runtime value`.
+- We can use `expressions` while initializing `constants`.
+
+```diff
++ Constant Types
+```
+- We can declare constants using `non-numeric` types as well.
+- Constants don't have to be only `numeric values`.
+- We `don't have to` declare the `types` of constants.
+- For e.g.
+    ```go
+    func main() {
+        // Below works..
+        const min       int     = 1
+        const pi        float64 = 3.14
+        const version   string  = "2.0.3"
+        const debug     bool    = true
+
+        // Declaring constants without types also works.
+        const min     = 1
+        const pi      = 3.14
+        const version = "2.0.3"
+        const debug   = true
+
+        // We can use expressions while initializing constants.
+        const min     = 1 + 1               //2
+        const pi      = 3.14 * min          // 6.28
+        const version = "2.0.3" + "-beta"   // 2.0.3-beta
+        const debug   = !true               // false
+    }
+    ```
