@@ -44,6 +44,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - [Constants](#constants)
     ```diff
+    + Important Links
     + Constant Types
     + Multiple Constants Declaration
     + Typeless Or Untyped Constants
@@ -491,6 +492,12 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Constants are `immutable` i.e. we cannot change their values.
 - We `cannot initialize` a constant to a `runtime value`.
 - We can use `expressions` while initializing `constants`.
+
+```diff
++ Important Links
+```
+- [Go’s typed and untyped constants](https://blog.learngoprogramming.com/learn-golang-typed-untyped-constants-70b4df443b61)
+- [Go enums and iota — Full of tips and tricks with runnable code examples](https://blog.learngoprogramming.com/golang-const-type-enums-iota-bc4befd096d3)
 
 ```diff
 + Constant Types
