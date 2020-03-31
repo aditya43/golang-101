@@ -49,6 +49,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Typeless Or Untyped Constants
     + Default Types
     + IOTA
+    + Common Abbreviations Used In GO
     ```
 
 ----------------------------------------
@@ -609,3 +610,43 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         )
     }
     ```
+
+```diff
++ Common abbreviations Used In GO
+```
+- Following are some of the common Abbreviations used in Go standard libraries:
+    ```go
+    var s string        // string
+    var i int           // index
+    var num int         // number
+    var msg string      // message
+    var v string        // value
+    var val string      // value
+    var fv string       // flag value
+    var err error       // error value
+    var args []string   // arguments
+    var seen bool       // has seen?
+    var parsed bool     // parsing ok?
+    var buf []byte      // buffer
+    var off int         // offset
+    var op int          // operation
+    var opRead int      // read operation
+    var m int           // another number
+    var c int           // capacity
+    var c int           // character
+    var sep string      // separator
+    var src int         // source
+    var dst int         // destination
+    var b byte          // byte
+    var b []byte        // buffer
+    var buf []byte      // buffer
+    var w io.Writer     // writer
+    var r io.Reader     // reader
+    var pos int         // position
+
+    // ...list goes on and on...
+    ```
+- Use the complete words in larger scopes such as `package scope`.
+- Use `mixedCaps`.
+- Use all capital letters for common acronyms such as `API`.
+- Do not use `underscores` in names.
