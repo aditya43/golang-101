@@ -43,6 +43,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Aliased Types
     ```
 - [Constants](constants)
+    ```diff
+    + Constant Types
+    + Multiple Constants Declaration
+    ```
 
 ----------------------------------------
 
@@ -512,3 +516,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         const debug   = !true               // false
     }
     ```
+
+```diff
++ Multiple Constants Declaration
+```
