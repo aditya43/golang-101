@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// Itoa doesn't return any errors
-	// So, you don't have to handle the errors for it
+	// So, we don't have to handle the errors for it
 
 	s := strconv.Itoa(42)
 

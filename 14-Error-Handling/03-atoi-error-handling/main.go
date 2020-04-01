@@ -10,7 +10,7 @@ func main() {
 	age := os.Args[1]
 
 	// Atoi returns an int and an error value
-	// So, you need to handle the errors
+	// So, we need to handle the errors
 
 	n, err := strconv.Atoi(age)
 

@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// Atoi returns an error value
-	// So, you should always check it
+	// So, we should always check it
 
 	n, err := strconv.Atoi(os.Args[1])
 

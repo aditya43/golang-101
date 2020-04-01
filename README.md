@@ -52,6 +52,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + IOTA
     + Common Abbreviations Used In Go
     ```
+- [Error Handling](#error-handling)
+    ```diff
+    + nil
+    ```
 
 ----------------------------------------
 
@@ -657,3 +661,44 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Use `mixedCaps`.
 - Use all capital letters for common acronyms such as `API`.
 - Do not use `underscores` in names.
+
+----------------------------------------
+
+## Error Handling
+- In Go, `nil` value is extensively used for Error Handling.
+- For e.g.
+    ```go
+    func main() {
+        data, err := someFunc()
+
+        if err != nil {
+            fmt.Println("Error occurred")
+            return
+        } else {
+            fmt.Println("Success")
+        }
+    }
+    ```
+
+```diff
++ nil
+```
+- `nil` is a `predeclared identifier` like `true`, `false`, `len()`, `int32`, `float64` etc.
+- Since it is a `predeclared identifier`, it can be used anywhere `without importing` any `package`.
+- `nil value` means that the value is `not initialized` yet.
+- It is similar to following identifiers in other languages:
+    ```javascript
+    null    // JavaScript
+    None    // Python
+    null    // Java
+    nil     // Ruby
+    ```
+- The `zero value` of all `pointer-based` types in Go is `nil`. Following are the `pointer-based` types in Go:
+    ```javascript
+    pointers
+    slices
+    maps
+    interfaces
+    channels
+    ```
+- In Go, `nil` value can be `untyped` or `typed` depending on the `context`.
