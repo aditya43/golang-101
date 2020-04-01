@@ -13,6 +13,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ----------------------------------------
 
 ## Important Notes
+- [VS Code - Go Config](#vs-code---go-config)
 - [Basics](#basics)
     ```diff
     + Packages
@@ -55,6 +56,24 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Error Handling](#error-handling)
     ```diff
     + nil
+    ```
+
+----------------------------------------
+
+## VS Code - Go Config
+- My VS Code configs for Go:
+    ```json
+    {
+        "go.lintTool": "golangci-lint",
+        "go.formatTool": "goimports",
+        "go.useLanguageServer": true,
+        "go.lintOnSave": "package",
+        "go.vetOnSave": "package",
+        "go.vetFlags": [
+            "-all",
+            "-shadow"
+        ]
+    }
     ```
 
 ----------------------------------------
