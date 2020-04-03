@@ -17,7 +17,7 @@ Your mission is to guess one of those numbers.
 
 The greater your number is, harder it gets.
 
-Wanna play?
+Give it a try..
 
 (Provide -v flag to see the picked numbers.)
 `
