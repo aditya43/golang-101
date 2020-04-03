@@ -10,8 +10,7 @@ import (
 func main() {
 	// Get and split the PATH environment variable
 
-	// SplitList function automatically finds the
-	// separator for the path env variable
+	// SplitList function automatically finds the separator for the path env variable
 	words := filepath.SplitList(os.Getenv("PATH"))
 
 	// Alternative way, but above one is better:
