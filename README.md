@@ -1,5 +1,5 @@
 # :beer: Go Language
-In-depth internals, my personal notes and projects. OOP in Go, Log file parser using bufio.Scanner, Spam Masker, Retro led clock, Console animations, Dictionary programs and lot more..
+In-depth internals, my personal notes, example codes and projects. Includes - OOP in Go, Log file parser using bufio.Scanner, Spam Masker, Retro led clock, Console animations, Dictionary programs and lot more..
 
 ## Author
 Aditya Hajare ([Linkedin](https://in.linkedin.com/in/aditya-hajare)).
