@@ -34,6 +34,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         - Redeclarations With Short Declarations
     + Blank Identifier
     + fmt.Printf and fmt.Sprintf Formatting
+    + Slice Vs. Array - Performance
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 - [Type System In Go](#type-system-in-go)
@@ -420,6 +421,16 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ' ' (space)  // leave a space for elided sign in numbers (% d); put spaces between bytes printing strings or slices in hex (% x, % X).
     0   // pad with leading zeros rather than spaces; for numbers, this moves the padding after the sign.
     ```
+
+```diff
++ Slice Vs. Array - Performance
+```
+- **`Slice` operations are cheap!**
+- `Slicing`: Creates a new `slice header`.
+- `Assigning a Slice to another Slice` or, `passing it to a function`: Only copies the `slice header`.
+- `Slice header has a fixed size` and `it doesn't change` even if we have got millions of elements.
+- **`Array` can be expensive as compared to `Slice`**.
+- `Assigning an array to another array` or `passing it to a function`: Copies all the elements of it.
 
 ----------------------------------------
 
