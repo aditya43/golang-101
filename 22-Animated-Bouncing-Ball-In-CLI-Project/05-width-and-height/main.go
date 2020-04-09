@@ -7,7 +7,7 @@ import (
 
 	"github.com/mattn/go-runewidth"
 
-	"github.com/inancgumus/screen"
+	screen "github.com/aditya43/clear-shell-screen-golang"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
