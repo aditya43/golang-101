@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/inancgumus/screen"
+	screen "github.com/aditya43/clear-shell-screen-golang"
 	"github.com/mattn/go-runewidth"
 )
 
