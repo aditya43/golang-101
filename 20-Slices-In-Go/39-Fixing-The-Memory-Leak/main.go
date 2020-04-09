@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	// "github.com/aditya43/golang/20-Slices-In-Go/39-Limiting-The-Backing-Array-Sharing/api"
+	"github.com/aditya43/golang/20-Slices-In-Go/39-Limiting-The-Backing-Array-Sharing/api"
 )
 
 func main() {
 	// reports the initial memory usage
-	// api.Report()
+	api.Report()
 
 	// returns a slice with 10 million elements.
 	// it allocates 65 MB of memory space.
-	// millions := api.Read()
+	millions := api.Read()
 
 	// ------------------------------------------------------
 
@@ -37,7 +37,7 @@ func main() {
 
 	// ------------------------------------------------------
 
-	// api.Report()
+	api.Report()
 
 	// don't worry about this code yet.
 	fmt.Fprintln(ioutil.Discard, millions[0])
