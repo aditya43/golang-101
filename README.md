@@ -744,7 +744,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Important Links
 ```
-- Representing letters with numbers: [https://youtu.be/1GSjbWt0c9M?t=403](https://youtu.be/1GSjbWt0c9M?t=403)
+- [Representing letters with numbers - Overview of ASCII and Unicode](https://youtu.be/1GSjbWt0c9M?t=403)
 
 ```diff
 + Strings Runes And Bytes 101
