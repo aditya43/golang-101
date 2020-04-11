@@ -763,5 +763,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```go
     char := '🍺'
     ```
+- `String values` are `read-only byte slices` i.e.
+    ```go
+    string value ----> read-only []byte
+    ```
+- `String to Byte Slice` conversion creates a `new []byte slice` and **copies** the bytes of the string to a new slice's `backing array`. They don't share the same `backing array`.
+- In short, `String` is an `immutable byte slice` and we cannot change any of it's elements. However, we can convert `string to a byte slice` and then we can change that `new slice`.
 
 ----------------------------------------
