@@ -769,6 +769,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - `String to Byte Slice` conversion creates a `new []byte slice` and **copies** the bytes of the string to a new slice's `backing array`. They don't share the same `backing array`.
 - In short, `String` is an `immutable byte slice` and we cannot change any of it's elements. However, we can convert `string to a byte slice` and then we can change that `new slice`.
+- **A `string` is a data structure that points to a `read-only backing array`.**
 - `UTF-8` is a `variable length encoding` (for efficiency). So each `rune` may start at a `different index`.
 - `for range` loop jumps over the `runes of a string`, rather than the `bytes of a string`. Each `index` returns the `starting index` of the `next rune`.
 - `Runes` in a `UTF-8 encoded string` can have a different number of `bytes` because `UTF-8` is a `variable byte-length encoding`.
