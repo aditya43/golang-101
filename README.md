@@ -769,5 +769,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - `String to Byte Slice` conversion creates a `new []byte slice` and **copies** the bytes of the string to a new slice's `backing array`. They don't share the same `backing array`.
 - In short, `String` is an `immutable byte slice` and we cannot change any of it's elements. However, we can convert `string to a byte slice` and then we can change that `new slice`.
+- `UTF-8` is a `variable length encoding` (for efficiency). So each `rune` may start at a `different index`.
+- `for range` loop jumps over the `runes of a string`, rather than the `bytes of a string`. Each `index` returns the `starting index` of the `next rune`.
+- `Runes` in a `UTF-8 encoded string` can have a different number of `bytes` because `UTF-8` is a `variable byte-length encoding`.
+- Especially in scripting languages, we can manipulate` UTF-8 strings` by `indexes` easily. However, Go doesn't allow us to do so `by default` because of **efficiency reasons**.
+- Go never hides the cost of doing something.
+- `[]rune(string)` creates a `new slice`, and **copies** each `rune` to new slice's `backing array`. **This is inefficient way of indexing strings.**
+- A `string` value usually use `UTF-8` so it can be **more efficient** because each `rune` on the other hand `uses 1 to 4 bytes` (variable-byte length).
+- Each `rune` in `[]rune` (Rune Slice) has the same length i.e. `4 bytes`. It is **inefficient** because the `rune` type is an **alias** to `int32`.
+- **In Go, if our `source code file` is encoded into `utf-8` then `String Literals` in our file are automatically encoded into `utf-8`.**
 
 ----------------------------------------
