@@ -746,10 +746,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `string value` is nothing but a `series of bytes`.
 - We can represent a `string value` as a `byte slice`. For e.g.
     ```go
-    "hey"   // String value
+    "hey"                   // String value
     []byte{104, 101, 121}   // Representing string "hey" in byte slice
 
-    []byte("hey")   // Converting string "hey" into byte slice
+    []byte("hey")                   // Converting string "hey" into byte slice
     string([]byte{104, 101, 121})   // Converting byte slice into string value
     ```
 - Instead of `numbers` (byte slice), we can also represent `string characters` as `rune literals`.
