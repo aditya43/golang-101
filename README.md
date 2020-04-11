@@ -789,5 +789,6 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `string` value usually use `UTF-8` so it can be **more efficient** because each `rune` on the other hand `uses 1 to 4 bytes` (variable-byte length).
 - Each `rune` in `[]rune` (Rune Slice) has the same length i.e. `4 bytes`. It is **inefficient** because the `rune` type is an **alias** to `int32`.
 - **In Go, if our `source code file` is encoded into `utf-8` then `String Literals` in our file are automatically encoded into `utf-8`.**
+- When we're working with `bytes`, continue working with `bytes`. Do not convert a `string` to `[]byte` (Byte Slice) or vice versa, unless necessary. **Prefer working with `[]byte` (Byte Slice) whenever possible.** `Bytes` are more efficient and used almost everywhere in Go standard libraries.
 
 ----------------------------------------
