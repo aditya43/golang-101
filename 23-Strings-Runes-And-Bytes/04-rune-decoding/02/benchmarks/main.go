@@ -54,4 +54,6 @@ func main() {
 	fmt.Println("benchDecoder", bench(decoder))
 	fmt.Println("benchForRange", bench(forRange))
 	fmt.Println("benchConcater", bench(concater))
+
+	_ := globalString
 }
