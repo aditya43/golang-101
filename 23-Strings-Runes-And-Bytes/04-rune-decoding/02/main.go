@@ -20,7 +20,7 @@ func main() {
 	var size int
 	for i := range string(word) {
 		if i > 0 {
-			size = i
+			// size = i // Uncomment this line to execute
 			break
 		}
 	}
