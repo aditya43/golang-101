@@ -60,6 +60,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - [Strings Runes And Bytes](#strings-runes-and-bytes)
     ```diff
+    + Important Links
     + Strings Runes And Bytes 101
     ```
 
@@ -740,6 +741,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ----------------------------------------
 
 ## Strings Runes And Bytes
+```diff
++ Important Links
+```
+- Representing letters with numbers: [https://youtu.be/1GSjbWt0c9M?t=403](https://youtu.be/1GSjbWt0c9M?t=403)
+
 ```diff
 + Strings Runes And Bytes 101
 ```
