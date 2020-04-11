@@ -748,6 +748,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Characters in a computer - Advanced technical videos about the underlyings of ASCII and Unicode](https://www.youtube.com/watch?v=B1Sf1IhA0j4&list=PLhQN_EIoIKBRA0yVTsWDoJzEKZwJY0p3l)
     * **The 3rd video is especially important because it talks about UTF-8 encoding and decoding.**
 - [Hexadecimal Number System - Hexadecimal numbers are important when working with bytes](https://www.youtube.com/watch?v=4EJay-6Bioo)
+- [Go Blog: Strings](https://blog.golang.org/strings)
 
 ```diff
 + Strings Runes And Bytes 101
