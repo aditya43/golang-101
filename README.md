@@ -58,6 +58,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + nil
     ```
+- [Strings Runes And Bytes](#strings-runes-and-bytes)
+    ```diff
+    + Strings Runes And Bytes 101
+    ```
 
 ----------------------------------------
 
@@ -732,3 +736,27 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     channels
     ```
 - In Go, `nil` value can be `untyped` or `typed` depending on the `context`.
+
+----------------------------------------
+
+## Strings Runes And Bytes
+```diff
++ Strings Runes And Bytes 101
+```
+- A `string value` is nothing but a `series of bytes`.
+- We can represent a `string value` as a `byte slice`. For e.g.
+    ```go
+    "hey"   // String value
+    []byte{104, 101, 121}   // Representing string "hey" in byte slice
+
+    []byte("hey")   // Converting string "hey" into byte slice
+    string([]byte{104, 101, 121})   // Converting byte slice into string value
+    ```
+- Instead of `numbers` (byte slice), we can also represent `string characters` as `rune literals`.
+- `Numbers` and `Rune Literals` are the same thing.
+- **In Go, `Unicode Code Points` are called `Runes`.**
+- A `Rune literal` is a `typeless integer literal`.
+- A `Rune literal` can be of `any integer type`. for e.g. `byte (uint8)`, `rune (int32)` or `any other integer type`.
+- **In short, `Rune` is a `Unicode Code Point` that is represented by an `Integer Value`.**
+
+----------------------------------------
