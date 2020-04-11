@@ -758,5 +758,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `Rune literal` is a `typeless integer literal`.
 - A `Rune literal` can be of `any integer type`. for e.g. `byte (uint8)`, `rune (int32)` or `any other integer type`.
 - **In short, `Rune` is a `Unicode Code Point` that is represented by an `Integer Value`.**
+- Using `UTF-8` we can represent `Unicode Code Points` between `1 byte` and `4 bytes`.
+- We can represent any `Unicode Code Point` using the `Rune Type` because it can store `4 bytes` of data. For e.g.
+    ```go
+    char := '🍺'
+    ```
 
 ----------------------------------------
