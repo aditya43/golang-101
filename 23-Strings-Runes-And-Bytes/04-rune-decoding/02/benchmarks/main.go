@@ -55,5 +55,5 @@ func main() {
 	fmt.Println("benchForRange", bench(forRange))
 	fmt.Println("benchConcater", bench(concater))
 
-	_ := globalString
+	_ = globalString
 }
