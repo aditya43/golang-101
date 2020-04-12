@@ -63,6 +63,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Important Links
     + Strings Runes And Bytes 101
     ```
+- [Maps In Go](#-maps-in-go)
+    ```diff
+    + Maps 101
+    ```
 
 ----------------------------------------
 
@@ -790,5 +794,19 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Each `rune` in `[]rune` (Rune Slice) has the same length i.e. `4 bytes`. It is **inefficient** because the `rune` type is an **alias** to `int32`.
 - **In Go, if our `source code file` is encoded into `utf-8` then `String Literals` in our file are automatically encoded into `utf-8`.**
 - When we're working with `bytes`, continue working with `bytes`. Do not convert a `string` to `[]byte` (Byte Slice) or vice versa, unless necessary. **Prefer working with `[]byte` (Byte Slice) whenever possible.** `Bytes` are more efficient and used almost everywhere in Go standard libraries.
+
+----------------------------------------
+
+## Maps In Go
+```diff
++ Maps 101
+```
+- `Maps` allows us to quickly access to an `element/value `using a `unique key`.
+- `Map keys` must be `unique` because otherwise it can't find the corresponding `values/elements`.
+- The types of `Map Keys` and `Values in Maps` can be `different`.
+- A `Map Key` must be a `comparable type`.
+- All `Map Keys` and `Map Values` must `belong` to their `corresponding types`. They `can't be mixed up`.
+- A `Map Variable (or a Value)` is nothing but a `pointer` to a `Map Header Value` in the `memory`.
+- A `Map Value` only contains the `memory address` of a `Map Header`.
 
 ----------------------------------------
