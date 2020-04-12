@@ -450,6 +450,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     * **Slices**: Collection of elements. `Indexable` and `Dynamic Length`.
     * **Strings**: Byte Slices. ASCII and UNICODE.
     * **Maps**: Collection of `Indexable Key-Value Pairs`.
+    * **Structs**: Groups different types of variables together.
 
 ----------------------------------------
 
