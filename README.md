@@ -35,6 +35,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Blank Identifier
     + fmt.Printf and fmt.Sprintf Formatting
     + Slice Vs. Array - Performance
+    + Composite Types In Go
     ```
 - [Naming Conventions In Go](07-Naming-Conventions/README.md#naming-rules-in-go-language)  :arrow_upper_right:
 - [Type System In Go](#type-system-in-go)
@@ -440,6 +441,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Slice header has a fixed size` and `it doesn't change` even if we have got millions of elements.
 - **`Array` can be expensive as compared to `Slice`**.
 - `Assigning an array to another array` or `passing it to a function`: Copies all the elements of it.
+
+```diff
++ Composite Types In Go
+```
+- Following are the `Composite Types` in Go:
+    * **Arrays**: Collection of elements. `Indexable` and `Fixed Length`.
+    * **Slices**: Collection of elements. `Indexable` and `Dynamic Length`.
 
 ----------------------------------------
 
