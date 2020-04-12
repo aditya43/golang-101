@@ -448,6 +448,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Following are the `Composite Types` in Go:
     * **Arrays**: Collection of elements. `Indexable` and `Fixed Length`.
     * **Slices**: Collection of elements. `Indexable` and `Dynamic Length`.
+    * **Strings**: Byte Slices. ASCII and UNICODE.
+    * **Maps**: Collection of `Indexable Key-Value Pairs`.
 
 ----------------------------------------
 
