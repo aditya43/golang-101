@@ -68,6 +68,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Maps 101
     ```
+- [Structs In Go](#structs-in-go)
+    ```diff
+    + Inheritance vs. Composition
+    ```
 
 ----------------------------------------
 
@@ -821,3 +825,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `Map Value` only contains the `memory address` of a `Map Header`.
 
 ----------------------------------------
+
+## Structs In Go
+```diff
++ Inheritance vs. Composition
+```
+![Inheritance vs. Composition](https://turnoff.us/image/en/cokorange.png)
