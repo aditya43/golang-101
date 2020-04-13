@@ -77,6 +77,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Methods
     + Pointer Receivers
+    + Attaching Methods To Any Types
     ```
 
 ----------------------------------------
@@ -112,6 +113,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `package` clause can be used only once per file and it should be the first line in `.go` source file.
 - Package contains multiple `Go` files belonging to same folder.
 
+----------------------------------------
+
 ```diff
 - Executable Packages
 ```
@@ -120,6 +123,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - These are created only for `running` it as a Go program.
 - These cannot be imported into a Go program.
 - Package name should be `main`.
+
+----------------------------------------
 
 ```diff
 - Library Packages
@@ -132,6 +137,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Package name can have any name.
 - Doesn't need to have function named `main()`. To avoid confusion, it's better not to have function named `main()` in a reusable package.
 
+----------------------------------------
+
 ```diff
 + Scopes
 ```
@@ -141,6 +148,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     2. `file`: Imported packages are only visible to the importing file. Each file has to import external packages on it's own.
     3. `func`.
     4. `block`.
+
+----------------------------------------
 
 ```diff
 + Renaming Imports
@@ -157,6 +166,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 - We can import packages with the same name into same file by giving one of them imports a new name.
+
+----------------------------------------
 
 ```diff
 + Exporting
@@ -175,6 +186,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 + Data Types
 ```
@@ -184,6 +197,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     * **Aggregate type**: Array and structs come under this category.
     * **Reference type**: Pointers, slices, maps, functions, and channels come under this * category.
     * **Interface type**
+
+----------------------------------------
 
 ```diff
 - Basic Data Types
@@ -232,6 +247,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
             * **Using double quotes**
             * **Using backticks**
 
+----------------------------------------
+
 ```diff
 + Variables
 ```
@@ -240,6 +257,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - Variables are not created at `compile time`. They are created at `run time`.
 - The unnamed variables are `pointers` (like in C).
 - Once we declare a type for a variable, it cannot be changed later. It is static.
+
+----------------------------------------
 
 ```diff
 - Zero Values
@@ -255,11 +274,15 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     var adiPointer *string    // nil | 'nil' means it doesn't point to any memory location
     ```
 
+----------------------------------------
+
 ```diff
 - Unused variables
 ```
 - **Unused variables in `blocked scope` are not allowed in Go since they cause `maintenance nightmares`.** If we declare a variable in `blocked scope` then we must use it or else completely remove it from the block. We cannot have unused variables declared in `blocked scope` dangling in our source codes. Go throws unused variable errors at `compile time` only.
 - **We should avoid using `package level` variables.** Go doesn't throw `unused variable errors` at `compile time` for variables declared at `package level`.
+
+----------------------------------------
 
 ```diff
 - Multiple Declarations
@@ -288,6 +311,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 - Type Inference
 ```
@@ -301,6 +326,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         var someFlag = true // We are not specifying type of 'someFlag' as bool here.
     }
     ```
+
+----------------------------------------
 
 ```diff
 - Short Declaration
@@ -319,6 +346,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 - Multiple Short Declarations
 ```
@@ -331,6 +360,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 - In this type of declaration, number of values and number of names must be the same. Otherwise it will result in error.
+
+----------------------------------------
 
 ```diff
 - Redeclarations With Short Declarations
@@ -349,6 +380,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 + Blank Identifier
 ```
@@ -359,6 +392,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - We cannot use value assigned to `_`.
 - It is like a black hole that swallows variable.
 - [Detailed information and usage of Blank Identifier](https://golang.org/doc/effective_go.html#blank)
+
+----------------------------------------
 
 ```diff
 + fmt.Printf and fmt.Sprintf Formatting
@@ -442,6 +477,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     0   // pad with leading zeros rather than spaces; for numbers, this moves the padding after the sign.
     ```
 
+----------------------------------------
+
 ```diff
 + Slice Vs. Array - Performance
 ```
@@ -451,6 +488,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Slice header has a fixed size` and `it doesn't change` even if we have got millions of elements.
 - **`Array` can be expensive as compared to `Slice`**.
 - `Assigning an array to another array` or `passing it to a function`: Copies all the elements of it.
+
+----------------------------------------
 
 ```diff
 + Composite Types In Go
@@ -470,6 +509,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     * `integer` wrap arounds and go to their minimum and maximum values.
     * `float` wrap arounds to `positive infinity` or `negative infinity`.
 
+----------------------------------------
+
 ```diff
 + Important Links
 ```
@@ -480,6 +521,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [How old school graphics worked? PART 2](https://www.youtube.com/watch?v=_rsycfDliZU)
 - [Stackoverflow: What actually is a Byte Stream?](https://softwareengineering.stackexchange.com/questions/216597/what-is-a-byte-stream-actually/216600#216600)
 - [Why Byte but not uint8?](https://github.com/golang/go/issues/22180)
+
+----------------------------------------
 
 ```diff
 + Predeclared Types
@@ -505,6 +548,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     // Size: 8 byte
     ```
 
+----------------------------------------
+
 ```diff
 + Defined Types
 ```
@@ -528,6 +573,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     nanoSeconds = Duration(microSeconds) // Works! We are converting 'microSeconds' to 'Named Type' we have created above i.e. 'Duration'
     microSeconds = int64(nanoSeconds) // This also works!
     ```
+
+----------------------------------------
 
 ```diff
 + Aliased Types
@@ -557,11 +604,15 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - We `cannot initialize` a constant to a `runtime value`.
 - We can use `expressions` while initializing `constants`.
 
+----------------------------------------
+
 ```diff
 + Important Links
 ```
 - [Go’s typed and untyped constants](https://blog.learngoprogramming.com/learn-golang-typed-untyped-constants-70b4df443b61)
 - [Go enums and iota — Full of tips and tricks with runnable code examples](https://blog.learngoprogramming.com/golang-const-type-enums-iota-bc4befd096d3)
+
+----------------------------------------
 
 ```diff
 + Constant Types
@@ -592,6 +643,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 + Multiple Constants Declaration
 ```
@@ -616,6 +669,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 + Typeless Or Untyped Constants
 ```
@@ -635,6 +690,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         var r rune     =  min  // Type of constant 'min' = rune
     }
     ```
+
+----------------------------------------
 
 ```diff
 + Default Types
@@ -663,6 +720,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - An `untyped constant` has a `default type`.
 - Go `evaluates the expression` then it `converts` the `resulting typeless value` to its `default value`.
 
+----------------------------------------
+
 ```diff
 + IOTA
 ```
@@ -681,6 +740,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         )
     }
     ```
+
+----------------------------------------
 
 ```diff
 + Common Abbreviations Used In Go
@@ -740,6 +801,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 
+----------------------------------------
+
 ```diff
 + nil
 ```
@@ -774,6 +837,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     * **The 3rd video is especially important because it talks about UTF-8 encoding and decoding.**
 - [Hexadecimal Number System - Hexadecimal numbers are important when working with bytes](https://www.youtube.com/watch?v=4EJay-6Bioo)
 - [Go Blog: Strings](https://blog.golang.org/strings)
+
+----------------------------------------
 
 ```diff
 + Strings Runes And Bytes 101
@@ -838,6 +903,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```
 ![Inheritance vs. Composition](https://turnoff.us/image/en/cokorange.png)
 
+----------------------------------------
+
 ```diff
 + Structs 101
 ```
@@ -892,9 +959,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - Behind the scenes, a `method` is a `function` that takes `receiver` as it's `first argument`.
 
+----------------------------------------
+
 ```diff
 + Pointer Receivers
 ```
 - The only difference between `method` and a `function` is that a `method` belongs to a `type`, whereas a `function` belongs to a `package`.
 - **Consistent Design Tip**: When one of the `methods` in any `type` are using `pointer receiver`, it is better to convert all `method receivers` of that `type` to `pointer receivers`.
 - **We (must) use a `pointer receiver` when we want to make changes to a `receiver variable`. In other words, use a `pointer receiver` when the received value into `method` is going to be very large.**
+
+----------------------------------------
+
+```diff
++ Attaching Methods To Any Types
+```
