@@ -844,3 +844,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - The `field names` and `types` are declared at `compile-time`. They are `fixed` and cannot change in `runtime`.
 - `Field values` belong to `runtime`. We can change them in `runtime`.
 - `Structs` cannot dynamically `grow` but they can have `different` set of `types`.
+- Struct example:
+    ```go
+    type VideoGame struct {
+        Title string Genre string
+        Published bool
+    }
+    ```
