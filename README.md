@@ -71,6 +71,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Structs In Go](#structs-in-go)
     ```diff
     + Inheritance vs. Composition
+    + Structs 101
     ```
 
 ----------------------------------------
@@ -838,3 +839,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Structs` are `blueprints` — They are `fixed` at `compile-time`.
 - It's like a `class` in `OOP` languages. Groups `related data` in a `single type`.
 - `Struct types` are created at `compile-time`.
+- A `struct` may store `different types` of data.
+- `Struct fields` are declared at `compile-time`. However, `struct values` fill them in `runtime`.
+- The `field names` and `types` are declared at `compile-time`. They are `fixed` and cannot change in `runtime`.
+- `Field values` belong to `runtime`. We can change them in `runtime`.
+- `Structs` cannot dynamically `grow` but they can have `different` set of `types`.
