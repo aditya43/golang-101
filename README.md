@@ -973,3 +973,26 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Attaching Methods To Any Types
 ```
+- We can attach methods to any type in Go. For e.g.
+    ```go
+    // Basic Types
+    int
+    string
+    float64
+
+    // Bare Types
+    array
+    struct
+
+    // -----------------------
+    // Do not use "Pointer Receivers" with below types since they already carry a pointer with themselves.
+    // i.e. slice, map, chan, func
+    // -----------------------
+    // Pointer Bearing Types
+    slice
+    map
+    chan // Channels
+
+    // We can also attach methods to:
+    func
+    ```
