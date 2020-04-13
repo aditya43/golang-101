@@ -8,5 +8,5 @@ type book struct {
 }
 
 func (b book) print() {
-	fmt.Printf("%-19s: $%.2f\n", b.title, b.price)
+	fmt.Printf("%-15s: $%.2f\n", b.title, b.price)
 }

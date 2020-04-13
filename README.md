@@ -76,6 +76,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [OOP In Go With Methods And Interfaces](#oop-in-go-with-methods-and-interfaces)
     ```diff
     + Methods
+    + Pointer Receivers
     ```
 
 ----------------------------------------
@@ -883,3 +884,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `receiver` is nothing but method's `input parameters` written `before` a `method name`.
 - A `method` belongs to a `single type`.
 - `Methods` on `different types` can have the `same names`.
+- `Method Expressions` allows us to call `methods` through `types`. For e.g.
+    ```go
+    // "game" is a struct type
+    game.print(cod)
+    game.print(battlefield)
+    ```
+- Behind the scenes, a `method` is a `function` that takes `receiver` as it's `first argument`.
+
+```diff
++ Pointer Receivers
+```
+- The only difference between `method` and a `function` is that a `method` belongs to a `type`, whereas a `function` belongs to a `package`.
+- **Consistent Design Tip**: When one of the `methods` in any `type` are using `pointer receiver`, it is better to convert all `method receivers` of that `type` to `pointer receivers`.
+- **We (must) use a `pointer receiver` when we want to make changes to a `receiver variable`. In other words, use a `pointer receiver` when the received value into `method` is going to be very large.**
