@@ -44,7 +44,7 @@ func main() {
 		{item: item{id: 3, name: "minecraft", price: 20}, genre: "sandbox"},
 	}
 
-	fmt.Printf("Inanc's game store has %d games.\n\n", len(games))
+	fmt.Printf("Aditya's game store has %d games.\n\n", len(games))
 
 	for _, g := range games {
 		fmt.Printf("#%d: %-15q %-20s $%d\n",
