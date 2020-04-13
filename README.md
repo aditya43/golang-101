@@ -831,3 +831,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 + Inheritance vs. Composition
 ```
 ![Inheritance vs. Composition](https://turnoff.us/image/en/cokorange.png)
+
+```diff
++ Structs 101
+```
+- `Structs` are `blueprints` — They are `fixed` at `compile-time`.
+- It's like a `class` in `OOP` languages. Groups `related data` in a `single type`.
+- `Struct types` are created at `compile-time`.
