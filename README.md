@@ -851,3 +851,5 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         Published bool
     }
     ```
+- Two `structs` are `equal` if all their `fields` are `equal`.
+- `Anonymous Fields`: When the `field names conflict` the` parent type` takes `priority`.
