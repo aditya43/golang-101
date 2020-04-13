@@ -73,6 +73,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Inheritance vs. Composition
     + Structs 101
     ```
+- [OOP In Go With Methods And Interfaces](#oop-in-go-with-methods-and-interfaces)
+    ```diff
+    + Methods
+    ```
 
 ----------------------------------------
 
@@ -853,3 +857,29 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - Two `structs` are `equal` if all their `fields` are `equal`.
 - `Anonymous Fields`: When the `field names conflict` the` parent type` takes `priority`.
+
+----------------------------------------
+
+## OOP In Go With Methods And Interfaces
+```diff
++ Methods
+```
+- `Methods` enhance `types` with additional behavior.
+- `Methods` of the `type` are called `Method Set`.
+- To attach method to a `type`:
+    ```go
+    // Syntax
+    // "varName Type" is called a "receiver"
+    func (varName Type) funcName() {
+        // Code
+    }
+
+    // Example
+    // "book" is a struct here
+    func (b book) printBook() {
+        fmt.Println(b.title, b.price)
+    }
+    ```
+- A `receiver` is nothing but method's `input parameters` written `before` a `method name`.
+- A `method` belongs to a `single type`.
+- `Methods` on `different types` can have the `same names`.
