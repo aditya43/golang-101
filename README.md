@@ -78,6 +78,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Methods
     + Pointer Receivers
     + Attaching Methods To Any Types
+    + Interfaces
     ```
 
 ----------------------------------------
