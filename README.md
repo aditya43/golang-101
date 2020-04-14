@@ -81,6 +81,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Interfaces
     + Type Assertion
     + Empty Interface
+    + Type Switch
     ```
 
 ----------------------------------------
@@ -1058,3 +1059,28 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - To use a `value` from `Empty Interface`, we first need to `extract` it using `Type Assertion`.
 - `Empty Interface Slice` contains the `Empty Interface Values`.
+
+----------------------------------------
+
+```diff
++ Type Switch
+```
+- `Type Switch` allows us to detect and extract `dynamic values` from `Interface Values` using `Switch Statement`.
+- When we have lots of conditions to check, we can use `Type Switch`.
+- Example of `Type Switch` statement:
+    ```go
+    // "v"     ---> Interface Value
+    // "type"  ---> Extracts type from the Interface Value "v"
+    // "e"     ---> Extracted value will be assigned to variable "e". It changes depending on the extracted value.
+    switch e := v.(type) {
+        case int:
+            // "e" is an "int" here..
+        case string:
+            // "e" is an "string" here..
+        default:
+            // "e"'s type equals to "v"'s type..
+    }
+    ```
+- Unlike regular `Switch` which compares `values`, the `Type Switch` compares `types of the values`.
+
+----------------------------------------
