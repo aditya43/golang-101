@@ -1,4 +1,4 @@
-module github.com/aditya43/golang
+module github.com/aditya43/golang-core
 
 go 1.23
 
