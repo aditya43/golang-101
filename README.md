@@ -1042,3 +1042,19 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Empty Interface
 ```
+- **Do not use `Empty Interface` unless really necessary.**
+- An `Interface Value` has 2 parts:
+    * A dynamic `Value`.
+    * A dynamic `Type`.
+- `Empty Interface` is the one which doesn't have any `methods`.
+- Every `Type` satisfies the `Empty Interface`.
+- It can represent any `Type` of `Value`.
+- We can't directly use the `dynamic value` of an `empty interface value`.
+- Example of Empty Interface:
+    ```go
+    type someInterface interface {
+
+    }
+    ```
+- To use a `value` from `Empty Interface`, we first need to `extract` it using `Type Assertion`.
+- `Empty Interface Slice` contains the `Empty Interface Values`.
