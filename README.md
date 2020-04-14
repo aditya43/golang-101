@@ -1,4 +1,4 @@
-# :beer: Go Language
+# :beer: Go Language (Core)
 In-depth internals, my personal notes, example codes and projects. Includes - OOP in Go, Log file parser using bufio.Scanner, Spam Masker, Retro led clock, Console animations, Dictionary programs and lot more..
 
 ## Author
