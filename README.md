@@ -996,3 +996,32 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     // We can also attach methods to:
     func
     ```
+
+----------------------------------------
+
+```diff
++ Interfaces
+```
+- `Interfaces` decouple different `types` from each other so we can create more maintainable programs.
+- An `Interface` is a `Protocol`, a `Contract`.
+- **Bigger the `Interface` the weaker the `abstraction`. --> `Rob Pike`**
+- It's an `abstract type`. It doesn't have any implementation. It only describes `the expected behavior`.
+- The opposite of `Abstract Type` is `Concrete Type`.
+- All the `types` in Go except `Interface` are of `Concrete Type`.
+- For e.g. Following are `Concrete Types`:
+    ```go
+    // Concrete Types
+    int
+    string
+    float64
+    array
+    struct
+    slice
+    map
+    chan
+    func
+    ```
+- **The Interface only defines the expected behavior.**
+- Go does not have an implements keyword.
+- `A Type satisfies an Interface automatically` when it has `all the methods of the Interface` without explicitely specifying it.
+- `Interface` values are `comparable`.
