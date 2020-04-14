@@ -80,6 +80,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Attaching Methods To Any Types
     + Interfaces
     + Type Assertion
+    + Empty Interface
     ```
 
 ----------------------------------------
@@ -1028,8 +1029,16 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `A Type satisfies an Interface automatically` when it has `all the methods of the Interface` without explicitely specifying it.
 - `Interface` values are `comparable`.
 
+----------------------------------------
+
 ```diff
 + Type Assertion
 ```
 - `Type Assertion` allows us to `extract` the `dynamic value` from `Interface`.
 - It can also be used to check (assert) whether the `Interface Value` provides the `method` we want.
+
+----------------------------------------
+
+```diff
++ Empty Interface
+```
