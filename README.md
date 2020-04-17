@@ -19,6 +19,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Packages
         - Executable Packages
         - Library Packages
+    + Function init()
     + Scopes
     + Renaming Imports
     + Exporting
@@ -151,6 +152,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - These are created only for `reusability` purposes.
 - Package name can have any name.
 - Doesn't need to have function named `main()`. To avoid confusion, it's better not to have function named `main()` in a reusable package.
+
+----------------------------------------
+
+```diff
++ Function init()
+```
+- The `init()` function is used to `initialize` the `state of a package`.
+- Go automatically calls `init()` function `before` calling `command-line` package's` main()` function.
 
 ----------------------------------------
 
