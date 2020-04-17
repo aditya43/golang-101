@@ -1108,6 +1108,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 + Empty Interface
 ```
 - **Do not use `Empty Interface` unless really necessary.**
+- Every `type` in Go implements the `empty interface`.
 - An `Interface Value` has 2 parts:
     * A dynamic `Value`.
     * A dynamic `Type`.
@@ -1123,6 +1124,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```
 - To use a `value` from `Empty Interface`, we first need to `extract` it using `Type Assertion`.
 - `Empty Interface Slice` contains the `Empty Interface Values`.
+- Example use cases of empty interfaces:
+    * A function that returns a value of `interface{}` can return **any** `type`.
+    * We can store heterogeneous values in an `array`, `slice`, or `map` using the empty `interface{} type`.
 
 ----------------------------------------
 
