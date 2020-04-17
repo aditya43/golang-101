@@ -116,6 +116,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - To make a package executable, name that package `main`. It's a special package.
 - `package` clause can be used only once per file and it should be the first line in `.go` source file.
 - Package contains multiple `Go` files belonging to same folder.
+- Any package that is intended to run on a `command-line`, must declare `package main`.
+- To alias a package upon importing:
+    ```go
+    package main
+
+    import fm "fmt"  // Package "fmt" has been aliased as "fm"
+
+    func main() {
+        //
+    }
+    ```
 
 ----------------------------------------
 
