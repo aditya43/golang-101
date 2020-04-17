@@ -1021,6 +1021,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Pointer Receivers
 ```
+- We can define `methods` on `types` using `Pointer Receivers`.
 - The only difference between `method` and a `function` is that a `method` belongs to a `type`, whereas a `function` belongs to a `package`.
 - **Consistent Design Tip**: When one of the `methods` in any `type` are using `pointer receiver`, it is better to convert all `method receivers` of that `type` to `pointer receivers`.
 - **We (must) use a `pointer receiver` when we want to make changes to a `receiver variable`. In other words, use a `pointer receiver` when the received value into `method` is going to be very large.**
@@ -1059,6 +1060,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Interfaces
 ```
+- We declare an `Interface` much like as we define a `user defined type`.
 - `Interfaces` decouple different `types` from each other so we can create more maintainable programs.
 - An `Interface` is a `Protocol`, a `Contract`.
 - **Bigger the `Interface` the weaker the `abstraction`. --> `Rob Pike`**
@@ -1083,6 +1085,14 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `A Type satisfies an Interface automatically` when it has `all the methods of the Interface` without explicitely specifying it.
 - `Interface` values are `comparable`.
 - `Go interfaces` are `implicit`. **The implementing types don't need to specify that they implement an interface.**
+- Interface declaration example:
+    ```go
+    type MyInterface interface {
+        foo() int
+        bar() float64
+        baz() string
+    }
+    ```
 
 ----------------------------------------
 
