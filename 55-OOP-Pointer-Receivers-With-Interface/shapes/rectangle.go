@@ -1,11 +1,13 @@
+package shapes
+
 type Rectangle struct {
-	width float64
+	width  float64
 	height float64
 }
 
 func NewRectangle(w float64, h float64) *Rectangle {
 	return &Rectangle{
-		width: w,
+		width:  w,
 		height: h,
 	}
 }
