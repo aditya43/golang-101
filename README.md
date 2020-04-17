@@ -13,7 +13,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ----------------------------------------
 
 ## Important Notes
-- [VS Code - Go Config](#vs-code---go-config)
+- [Go Configurations](#go-configurations)
+    ```diff
+    + Environment Configurations
+    + VS Code Configurations
+    ```
 - [Basics](#basics)
     ```diff
     + Packages
@@ -87,7 +91,36 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 
 ----------------------------------------
 
-## VS Code - Go Config
+## Go Configurations
+```diff
++ Environment Configurations
+```
+- Open up `.profile` or `.zshrc` or `.bashrc` depending on our OS and add/edit following:
+    ```bash
+    #!/bin/bash
+
+    # Specifies where the Go destribution is installed on the system.
+    export GOROOT=/usr/local/go
+
+    # Specifies top-level directory containing source code for all our Go projects.
+    # Inside this directory, we need to create 3 more directories viz. "src", "pkg" and "bin".
+    export GOPATH=~/adiwork/go  # This directory is also known as Go Workspace.
+    # "src" directory inside Workspace represents where all the Go source code will be stored.
+    # "pkg" directory inside Workspace represents where the compiled Go packages will be stored.
+    # "bin" directory inside Workspace represents where the produced Go compiled binaries will be stored.
+
+    # Specifies where Go should install compiled binaries.
+    export GOBIN=${GOPATH}/bin
+
+    # Attaching GOROOT and GOBIN to shell environment's path variable.
+    export PATH=${PATH}:/usr/local/bin:${GOROOT}/bin:${GOBIN}
+    ```
+
+----------------------------------------
+
+```diff
++ VS Code Configurations
+```
 - My VS Code configs for Go:
     ```json
     {
