@@ -99,6 +99,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Advantages of Goroutines over Threads
     ```
 - [Channels](#channels)
+    ```diff
+    + Buffered Channels
+    ```
 
 ----------------------------------------
 
@@ -1268,10 +1271,22 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Channels` allows `Goroutines` to share memory by communicating
 - We can use `Channel Operators: <-, ->` to send and receive values.
     * **NOTE:** The data flows in the direction of the `arrow`.
-- We can create a `Channel` using built-in `make` function as below:
+- We can create a `Channel` using built-in `make()` function as below:
     ```go
     ch := make(chan type) // type: Data Type
     ```
 - **`Normal Channels` are `Synchronous`.**
+
+----------------------------------------
+
+```diff
++ Buffered Channels
+```
+- **`Buffered Channels` are `Asynchronous`.** i.e. Sending and Receiving messages through Channels will not block unless the Channel is full.
+- We can create a Buffered Channel using the built-in make() function.
+- For e.g.
+    ```go
+    ch := make(chan type, capacity)
+    ```
 
 ----------------------------------------
