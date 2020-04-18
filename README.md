@@ -103,6 +103,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Buffered Channels
     ```
 - [Mutexes And Wait Groups From GoSync Package](#mutexes-and-wait-groups-from-gosync-package)
+    ```diff
+    + Mutexes
+    ```
 
 ----------------------------------------
 
@@ -1296,7 +1299,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ## Mutexes And Wait Groups From GoSync Package
 - Since `Goroutines` run in a `same address space`, they have access to `shared memory` and this `access` must be `synchronised`. Go's motto is to `share memory` by `communicating` (`Goroutines` and `Channels` makes this possible).
 - Sometimes, some problems are better suited to using the `traditional forms of synchronisation`. Go allows us to make use of these `Synchonisation Primitives` by using the `Sync` package.
-- **A `Race Condition` happens when two or more `threads` can access `shared data` and try to change that `shared data` at the same time. We can use `Mutex` to solve this problem.**
 
+----------------------------------------
+
+```diff
++ Mutexes
+```
+- **A `Race Condition` happens when two or more `threads` can access `shared data` and try to change that `shared data` at the same time. We can use `Mutex` to solve this problem.**
+- A `Mutex` is a `Mutual Exclusion Lock`. It's a `Synchronisation Primitive`.
 
 ----------------------------------------
