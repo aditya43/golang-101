@@ -92,6 +92,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Concurrency
     + Parallelism
+    + Concurrency vs. parallelism
     ```
 
 ----------------------------------------
@@ -1169,6 +1170,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - The composition of independently executing tasks.
 - Applied when dealing with handling lots of things at once.
 - The focus is on how to structure a solution to solve a problem which may or may not be solved in a parallel manner.
+- `Concurrency` is a way to structure a program by breaking it into pieces that can be executed independently.
+- Communication is the means to coordinate the independent executions.
+- Go supports concurrency. Go provides:
+    * concurrent execution (`goroutines`).
+    * synchronization and messaging (`channels`).
+    * multi-way concurrent control (`select`).
+- **IMPORTANT POINTS:**
+    * `Concurrency` is powerful.
+    * `Concurrency` is not `parallelism`.
+    * `Concurrency` enables `parallelism`.
+    * `Concurrency` makes `parallelism` (and scaling and everything else) easy.
 
 ----------------------------------------
 
@@ -1176,6 +1188,21 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 + Parallelism
 ```
 - `Parallelism` is the simultaneous execution of computations.
+- Programming as the simultaneous execution of (possibly related) computations.
 - It's all about doing lots of things at once.
+
+----------------------------------------
+
+```diff
++ Concurrency vs. parallelism
+```
+- `Concurrency` is about dealing with lots of things at once.
+- `Parallelism` is about doing lots of things at once.
+- Not the same, but related.
+- `Concurrency` is about `structure`, `parallelism` is about `execution`.
+- `Concurrency` provides a way to `structure a solution` to solve a problem that may (but not necessarily) be `parallelizable`.
+- An analogy
+    * `Concurrent`: Mouse, keyboard, display, and disk drivers.
+    * `Parallel`: Vector dot product.
 
 ----------------------------------------
