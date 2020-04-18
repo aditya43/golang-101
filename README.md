@@ -1275,18 +1275,19 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```go
     ch := make(chan type) // type: Data Type
     ```
-- **`Normal Channels` are `Synchronous`.**
+- **`Normal Channels` are `Synchronous`.** i.e. Both the sending side and the receiving side of the `channel` **wait** until the other side is ready.
 
 ----------------------------------------
 
 ```diff
 + Buffered Channels
 ```
-- **`Buffered Channels` are `Asynchronous`.** i.e. Sending and Receiving messages through Channels will not block unless the Channel is full.
-- We can create a Buffered Channel using the built-in make() function.
+- **`Buffered Channels` are `Asynchronous`.** i.e. Sending and Receiving messages through `Buffered Channels` will not block unless the `Channel` is full.
+- We can create a `Buffered Channel` same way as we create the `Normal Channels` using the built-in `make()` function. The only difference is, we can pass the second parameter to `make()` function which indicates the Buffered Channel's `Buffering Capacity`.
 - For e.g.
     ```go
     ch := make(chan type, capacity)
     ```
+- **NOTE: If we pass the `Buffering Capacity` as `1`, we are creating a `Normal Channel`. To create a `Buffered Channel`, we have to pass `Buffering Capacity` as `greater than 1`**
 
 ----------------------------------------
