@@ -1247,3 +1247,5 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Goroutines` have a faster startup time than `threads`.
 - `Goroutines` come with `built-in primitives` to communicate safely between themselves called as `channels`.
 - `Goroutines` are extremely cheap when compared to `threads`. They are only a few `kb` in `stack size` and the `stack` can grow and shrink according to needs of the application whereas in the case of `threads` the `stack size` has to be specified and is `fixed`.
+
+----------------------------------------
