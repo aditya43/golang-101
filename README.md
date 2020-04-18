@@ -94,6 +94,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Parallelism
     + Concurrency vs. parallelism
     ```
+- [Goroutines](#goroutines)
 
 ----------------------------------------
 
@@ -1208,3 +1209,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     * `Parallel`: Vector dot product.
 
 ----------------------------------------
+
+## Goroutines
+- In Go, `concurrency` is achieved by using `Goroutines`.
+- `Goroutines` are `functions` or `methods` which can run `concurrently` with others `methods` and `functions`.
+- They are very much similar like `threads` in `Java` but light weight and cost of creating them is very low.
