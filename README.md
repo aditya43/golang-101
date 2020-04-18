@@ -89,9 +89,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Type Switch
     ```
 - [Concurrency And Parallelism](#concurrency-and-parallelism)
-```diff
-+ Concurrency
-```
+    ```diff
+    + Concurrency
+    + Parallelism
+    ```
 
 ----------------------------------------
 
@@ -1168,5 +1169,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - The composition of independently executing tasks.
 - Applied when dealing with handling lots of things at once.
 - The focus is on how to structure a solution to solve a problem which may or may not be solved in a parallel manner.
+
+----------------------------------------
+
+```diff
++ Parallelism
+```
+- `Parallelism` is the simultaneous execution of computations.
+- It's all about doing lots of things at once.
 
 ----------------------------------------
