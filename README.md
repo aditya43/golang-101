@@ -88,6 +88,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Empty Interface
     + Type Switch
     ```
+- [Concurrency And Parallelism](#concurrency-and-parallelism)
+```diff
++ Concurrency
+```
 
 ----------------------------------------
 
@@ -1154,5 +1158,15 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     }
     ```
 - Unlike regular `Switch` which compares `values`, the `Type Switch` compares `types of the values`.
+
+----------------------------------------
+
+## Concurrency And Parallelism
+```diff
++ Concurrency
+```
+- The composition of independently executing tasks.
+- Applied when dealing with handling lots of things at once.
+- The focus is on how to structure a solution to solve a problem which may or may not be solved in a parallel manner.
 
 ----------------------------------------
