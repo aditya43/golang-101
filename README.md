@@ -1307,5 +1307,6 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```
 - **A `Race Condition` happens when two or more `threads` can access `shared data` and try to change that `shared data` at the same time. We can use `Mutex` to solve this problem.**
 - A `Mutex` is a `Mutual Exclusion Lock`. It's a `Synchronisation Primitive`.
+- It is used to `protect shared data` which is simultaneously `accessed` by `multiple treads`.
 
 ----------------------------------------
