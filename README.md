@@ -1241,6 +1241,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         fmt.Println("Printing from main")
     }
     ```
+- Program is terminated when `main()` function execution is completed. When the program terminates, all `Goroutines` are terminated regardless of the fact if all the `Goroutines` has completed execution or not.
 - We can also run `Anonymous Functions` as `Goroutines` as follows:
     ```go
     // Executing anonymous function as Goroutine
