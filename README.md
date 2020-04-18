@@ -1241,6 +1241,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         fmt.Println("Printing from main")
     }
     ```
+- We can also run `Anonymous Functions` as `Goroutines` as follows:
+    ```go
+    // Executing anonymous function as Goroutine
+    go func() {
+        //
+    }()
+    ```
 
 ----------------------------------------
 
