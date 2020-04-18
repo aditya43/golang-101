@@ -1264,6 +1264,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 
 ## Channels
 - `Channels` are conduits (pipes) that we can use to pass values of a particular `type` from one `Goroutine` to another.
+- `Channels` are a mechanism for communication.
 - `Channels` allows `Goroutines` to share memory by communicating
 - We can use `Channel Operators: <-, ->` to send and receive values.
     * **NOTE:** The data flows in the direction of the `arrow`.
