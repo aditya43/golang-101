@@ -102,6 +102,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Buffered Channels
     ```
+- [Mutexes And Wait Groups From GoSync Package](#mutexes-and-wait-groups-from-gosync-package)
 
 ----------------------------------------
 
@@ -1289,5 +1290,11 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ch := make(chan type, capacity)
     ```
 - **NOTE: If we pass the `Buffering Capacity` as `1`, we are creating a `Normal Channel`. To create a `Buffered Channel`, we have to pass `Buffering Capacity` as `greater than 1`**
+
+----------------------------------------
+
+## Mutexes And Wait Groups From GoSync Package
+- Since `Goroutines` run in a `same address space`, they have access to `shared memory` and this `access` must be `synchronised`. Go's motto is to `share memory` by `communicating` (`Goroutines` and `Channels` makes this possible).
+- Sometimes, some problems are better suited to using the `traditional forms of synchronisation`. Go allows us to make use of these `Synchonisation Primitives` by using the `Sync` package.
 
 ----------------------------------------
