@@ -1196,6 +1196,8 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```diff
 + Concurrency vs. parallelism
 ```
+- **“Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.” — Rob Pike**
+    * **Concurrency is a property of a program where two or more tasks can be in progress simultaneously. Parallelism is a run-time property where two or more tasks are being executed simultaneously. Through concurrency you want to define a proper structure to your program. Concurrency can use parallelism for getting its job done but remember parallelism is not the ultimate goal of concurrency.**
 - `Concurrency` is about dealing with lots of things at once.
 - `Parallelism` is about doing lots of things at once.
 - Not the same, but related.
