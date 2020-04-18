@@ -1272,5 +1272,6 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```go
     ch := make(chan type) // type: Data Type
     ```
+- **`Normal Channels` are `Synchronous`.**
 
 ----------------------------------------
