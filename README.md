@@ -98,6 +98,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     ```diff
     + Advantages of Goroutines over Threads
     ```
+- [Channels](#channels)
 
 ----------------------------------------
 
@@ -1258,5 +1259,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - `Goroutines` have a faster startup time than `threads`.
 - `Goroutines` come with `built-in primitives` to communicate safely between themselves called as `channels`.
 - `Goroutines` are extremely cheap when compared to `threads`. They are only a few `kb` in `stack size` and the `stack` can grow and shrink according to needs of the application whereas in the case of `threads` the `stack size` has to be specified and is `fixed`.
+
+----------------------------------------
+
+## Channels
+- `Channels` are conduits (pipes) that we can use to pass values of a particular `type` from one `Goroutine` to another.
+- `Channels` allows `Goroutines` to share memory by communicating
+- We can use `Channel Operators: <-, ->` to send and receive values.
+    * **NOTE:** The data flows in the direction of the `arrow`.
+- We can create a `Channel` using built-in `make` function as below:
+    ```go
+    ch := make(chan type) // type: Data Type
+    ```
 
 ----------------------------------------
