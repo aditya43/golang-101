@@ -1216,7 +1216,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ## Goroutines
 - In Go, `concurrency` is achieved by using `Goroutines`.
 - `Goroutines` are `functions` or `methods` which can run `concurrently` with others `methods` and `functions`.
+- `Goroutines` are lightweight `threads` that are managed by the `Go runtime`.
 - They are very much similar like `threads` in `Java` but light weight and cost of creating them is very low.
+- Place the keyword `go` before a function call to execute it as a `Goroutine`.
 - To run a method or function concurrently prefix it with keyword `go`.
 - For e.g.
     ```go
