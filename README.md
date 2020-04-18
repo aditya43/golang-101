@@ -95,6 +95,9 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Concurrency vs. parallelism
     ```
 - [Goroutines](#goroutines)
+    ```diff
+    + Advantages of Goroutines over Threads
+    ```
 
 ----------------------------------------
 
@@ -1214,3 +1217,33 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - In Go, `concurrency` is achieved by using `Goroutines`.
 - `Goroutines` are `functions` or `methods` which can run `concurrently` with others `methods` and `functions`.
 - They are very much similar like `threads` in `Java` but light weight and cost of creating them is very low.
+- To run a method or function concurrently prefix it with keyword `go`.
+- For e.g.
+    ```go
+    package main
+
+    import (
+        "fmt"
+        "time"
+    )
+
+    func print() {
+        fmt.Println("Printing from goroutine")
+    }
+
+    func main() {
+        go print()
+        time.Sleep(1 * time.Second)
+
+        fmt.Println("Printing from main")
+    }
+    ```
+
+----------------------------------------
+
+```diff
++ Advantages of Goroutines over Threads
+```
+- `Goroutines` have a faster startup time than `threads`.
+- `Goroutines` come with `built-in primitives` to communicate safely between themselves called as `channels`.
+- `Goroutines` are extremely cheap when compared to `threads`. They are only a few `kb` in `stack size` and the `stack` can grow and shrink according to needs of the application whereas in the case of `threads` the `stack size` has to be specified and is `fixed`.
