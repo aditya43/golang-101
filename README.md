@@ -115,6 +115,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     # Attaching GOROOT and GOBIN to shell environment's path variable.
     export PATH=${PATH}:/usr/local/bin:${GOROOT}/bin:${GOBIN}
     ```
+- Execute following command to get `stringer`:
+    ```sh
+    go get -u golang.org/x/tools/cmd/stringer
+    ```
 
 ----------------------------------------
 
