@@ -105,6 +105,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - [Mutexes And Wait Groups From GoSync Package](#mutexes-and-wait-groups-from-gosync-package)
     ```diff
     + Mutexes
+    + Wait Groups
     ```
 
 ----------------------------------------
@@ -1309,5 +1310,13 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 - A `Mutex` is a `Mutual Exclusion Lock`. It's a `Synchronisation Primitive`.
 - It is used to `protect shared data` which is simultaneously `accessed` by `multiple treads`.
 - Making changes to shared data and reading a shared data (e.g. for printing purposes) are still considered accessing the same data simultaneously.
+
+----------------------------------------
+
+```diff
++ Wait Groups
+```
+- `Wait Groups` are another `Synchronisation Primitive`.
+- A `Wait Group` basically waits for `collection` of `Goroutines` to finish execution.
 
 ----------------------------------------
