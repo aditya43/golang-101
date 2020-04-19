@@ -107,6 +107,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Mutexes
     + Wait Groups
     ```
+- [Go Vet](#go-vet)
 
 ----------------------------------------
 
@@ -1318,5 +1319,17 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ```
 - `Wait Groups` are another `Synchronisation Primitive`.
 - A `Wait Group` basically waits for `collection` of `Goroutines` to finish execution.
+
+----------------------------------------
+
+## Go Vet
+- `go vet` command helps us catch errors which are not generally caught by Go Compiler.
+- For e.g.
+    * Go to directory: `62-Go-Vet-To-Catch-Errors`
+    * Execute file with below command:
+        ```sh
+        go vet main.go
+        ```
+    * It will catch the error where `int` is supplied to `fmt.Printf()` whereas `string` value should've been supplied. This error isn't caught by Go Compiler since the program is still syntactically correct.
 
 ----------------------------------------
