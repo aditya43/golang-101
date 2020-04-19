@@ -108,6 +108,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
     + Wait Groups
     ```
 - [Go Vet](#go-vet)
+- [Go Documentation Server On Local Machine](#go-documentation-server-on-local-machine)
 
 ----------------------------------------
 
@@ -1331,5 +1332,21 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
         go vet main.go
         ```
     * It will catch the error where `int` is supplied to `fmt.Printf()` whereas `string` value should've been supplied. This error isn't caught by Go Compiler since the program is still syntactically correct.
+
+----------------------------------------
+
+## Go Documentation Server On Local Machine
+- To start a Go Documentation Server On Local Machine, execute:
+    ```sh
+    # Install godoc with following command first:
+    # go get golang.org/x/tools/cmd/godoc
+
+    # Then execute:
+    godoc -http=:6060
+    ```
+- In browser, visit:
+    ```
+    http://localhost:6060
+    ```
 
 ----------------------------------------
