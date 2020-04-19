@@ -1,8 +1,8 @@
 package main
 
 import (
-	// "bytes"
-	// "encoding/json"
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -20,9 +20,19 @@ func main() {
 
 	body, err := ioutil.ReadAll(resp.Body)
 
-	fmt.Println(string(body)) // Without pretty print JSON
+	// fmt.Println(string(body)) // Without pretty print JSON
+	prettyPrintJSON(body)
 
 	_ = err
 }
 
+// Pretty print JSON to console
+func prettyPrintJSON(data []uint8) {
+	output := &bytes.Buffer{}
 
+	if err := json.Indent(output, data, "", "  "); err != nil {
+		panic(err)
+	}
+
+	fmt.Println(output.String())
+}
