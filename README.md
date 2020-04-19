@@ -1,5 +1,5 @@
 # :beer: Go Language (Core)
-In-depth internals, my personal notes, example codes and projects. Includes - Thousands of codes on core concepts of Golang, Concurrency, Parallelism, Goroutines, Mutexes and Wait Groups, OOP in Go, Testing in Go, Go tool chain, Backend web development, Some projects including Log file parser using bufio.Scanner, Spam Masker, Retro led clock, Console animations, Dictionary programs and lot more..
+In-depth internals, my personal notes, example codes and projects. Includes - Thousands of codes, OOP, Concurrency, Parallelism, Goroutines, Mutexes & Wait Groups, Testing in Go, Go tool chain, Backend web development, Some projects including Log file parser using bufio.Scanner, Spam Masker, Retro led clock, Console animations, Dictionary programs and lot more..
 
 ## Author
 Aditya Hajare ([Linkedin](https://in.linkedin.com/in/aditya-hajare)).
