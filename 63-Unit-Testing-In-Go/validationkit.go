@@ -1,3 +1,5 @@
+// To execute test suite: "go test -v"
+
 package validationkit
 
 import (
