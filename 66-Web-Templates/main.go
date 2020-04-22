@@ -16,7 +16,7 @@ func namasteGopherHandler(w http.ResponseWriter, r *http.Request) {
 	var userName string
 	userName = r.URL.Query().Get("userName")
 	if userName == "" {
-		userName = "Gopher"
+		userName = "आदित्य" // Default username
 	}
 	gopher := Gopher{Name: userName}
 	renderTemplate(w, "./templates/namaste.html", gopher)
