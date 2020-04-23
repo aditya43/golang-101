@@ -12,7 +12,6 @@ import (
 
 // Handler for displaying a social media post
 func displaySocialMediaPostHandler(w http.ResponseWriter, r *http.Request) {
-
 	myPost := socialmedia.NewPost(
 		"Aditya Hajare",
 		socialmedia.Moods["thrilled"],
@@ -30,17 +29,20 @@ func displaySocialMediaPostHandler(w http.ResponseWriter, r *http.Request) {
 
 // Template rendering function
 func renderTemplate(w http.ResponseWriter, templateFile string, templateData interface{}) {
-
 	t, err := template.ParseFiles(templateFile)
+
 	if err != nil {
 		log.Fatal("Error encountered while parsing the template: ", err)
 	}
+
 	_ = t.Execute(w, templateData)
 }
 
 func main() {
-
 	http.HandleFunc("/display-social-media-post", displaySocialMediaPostHandler)
 	http.Handle("/", http.FileServer(http.Dir("./static")))
+
+	fmt.Println("Server is listening on http://localhost:8080")
+
 	_ = http.ListenAndServe(":8080", nil)
 }
