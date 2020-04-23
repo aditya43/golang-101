@@ -1,0 +1,49 @@
+body {
+
+	font-family: arial, helvetica;
+	font-size: 12pt;
+
+}
+
+.smpostContainer {
+
+	border: 1px solid #CCC;
+	width: 504px;
+	min-height: 108px;
+	margin: auto;
+	padding: 18px;
+	box-shadow: 1px 1px 3px #888;
+}
+
+.author {
+
+
+}
+
+.caption {
+
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+.caption a {
+	text-decoration: none;
+}
+
+.creationtime {
+
+}
+
+.createdby {
+	color: blue;
+}
+
+.imagePreview {
+	text-align: center;
+	margin-top: 18px;
+}
+
+.msgBody {
+	margin-top: 27px;
+
+}
