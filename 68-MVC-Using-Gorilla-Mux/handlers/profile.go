@@ -10,5 +10,5 @@ func ProfileHandler(w http.ResponseWriter, r *http.Request) {
 
 	vars := mux.Vars(r)
 	username := vars["username"]
-	w.Write([]byte(username))
+	_, _ = w.Write([]byte(username))
 }
