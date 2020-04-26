@@ -1,0 +1,16 @@
+<h2>Friends</h2>
+{{if not . }}
+Currently not following any gophers!
+{{else}}
+		<form id="friendsList" class="pure-form">
+{{range .}}
+		<div id="followingitem_{{.UUID}}" class="followingFriendsListItem">
+			<img height="108" class="listItemImage" src="{{.ProfileImagePath}}">
+			<div class="gopherUsername"><span class="listItemName"><a class="listItemLink" href="/profile/{{.Username}}">@{{.Username}}</a></span></div>
+			<fieldset class="pure-group">
+				<button data-uuid="{{.UUID}}" data-username="{{.Username}}" type="button" class="unfollowButton pure-button pure-button-primary">Unfollow</button>
+			</fieldset>
+		</div>
+{{end}}
+		</form>
+{{end}}

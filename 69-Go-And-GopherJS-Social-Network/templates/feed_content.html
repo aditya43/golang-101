@@ -1,0 +1,34 @@
+<h1>{{.PageTitle}}</h1>
+
+<div class="formContainer smpostFormContainer">
+	<form id="smpostform" name="smpostform" method="post" class="pure-form pure-form-aligned">
+	<fieldset>
+
+	<fieldset class="pure-control-group">
+		<input id="caption" type="text" class="pure-input-1-2" placeholder="Caption" name="caption" value="{{.Fields.caption}}">
+		<span id="captionError" class="formError pure-form-message-inline">{{.Errors.caption}}</span>
+	</fieldset>
+
+	<fieldset class="pure-control-group">
+		<textarea id="messageBody" name="messageBody" class="pure-input-1-2" placeholder="What's on your mind, Gopher?">{{.Fields.messageBody}}</textarea>
+		<span id="messageBodyError" class="formError pure-form-message-inline">{{.Errors.messageBody}}</span>
+	</fieldset>
+
+	<fieldset class="pure-group">
+	<label for="mood">Mood</label>
+	<select id="mood" name="mood"> 
+	   {{range $key, $value := .Moods}}
+	   <option value="{{ $value }}" {{if eq $value $.CurrentMood}}selected{{end}}>{{index $.MoodEmoji $key}} {{ $key }}</option>
+	   {{end}}
+	</select>
+	</fieldset>
+
+	<button id="postButton" type="button" class="pure-button pure-input-1-2 pure-button-primary">Post</button>
+
+	</fieldset>
+	</form>
+</div>
+
+<div id="postsContainer">
+
+</div>

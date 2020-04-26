@@ -1,0 +1,249 @@
+body {
+
+	font-family: arial, helvetica;
+	margin-left: 18px;
+
+}
+
+body p {
+	font-size: 16pt;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+.smpostContainer {
+
+	border: 1px solid #CCC;
+	width: 540px;
+	min-height: 108px;
+	padding: 18px;
+	box-shadow: 1px 1px 3px #888;
+	margin-bottom: 18px;
+}
+
+.smpostFormContainer {
+	width: 720px;
+}
+
+.uploadFormContainer {
+	width: 720px;
+}
+
+#messageBody {
+	min-height: 207px;
+}
+
+.author {
+
+	clear: right;
+
+}
+
+.authorMood {
+	font-size: 18pt;
+}
+
+.authorImage {
+	width: 108px;
+	float: left;
+	clear: none;
+}
+
+.caption {
+	padding-top:9px;
+	font-weight: bold;
+	font-size: 18pt;
+	float: left;
+	clear: right;
+	width: 405px;
+}
+
+.createdBy a {
+	font-size: 14pt;
+	text-decoration: none;
+	color: blue;
+}
+
+.creationtime {
+
+}
+
+.createdby {
+	color: blue;
+}
+
+.imagePreview {
+	text-align: center;
+	margin-top: 18px;
+}
+
+.msgBody {
+	margin-top: 36px;
+
+}
+
+/* pure overrides */
+.pure-form-message-inline {
+	color: red !important;
+}
+
+.pure-control-group label, label{
+	color: gray;
+	font-weight: bold;
+	font-size: 0.93em;
+}
+
+.imageContainer {
+
+	display: inline;
+	margin-right: 27px;
+}
+
+.videoContainer {
+	display: inline;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0,117,183);
+	margin-left: -18px;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+	float: right;
+}
+
+li a {
+	font-size: 1.2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0,76,142)
+
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#sitelogo {
+font-size: 3.6em;
+font-family: 'Lobster', serif;
+color: rgb(4,147,227);
+margin-bottom: 18px;
+/*
+text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+*/
+}
+
+.magnifyingGlass {
+color: white;
+font-size: 13pt;
+font-weight: bold;
+-webkit-transform: rotate(45deg); 
+-moz-transform: rotate(45deg); 
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+#friendsListContainer{
+	width: 540px;
+}
+
+
+.followingFriendsListItem {
+	clear: none;
+	float: left;
+	width: 126px;
+	margin-left: 36px;
+	text-align: center;
+	font-size: 14pt;
+
+}
+
+.listItemImage {
+	margin-bottom: 9px;
+
+}
+
+
+.listItemLink {
+	text-decoration: none;
+	color: blue;
+
+}
+
+.listItemLink:hover {
+	font-weight: bold;
+}
+
+#aboutTextArea {
+	width: 504px;
+	height: 144px;
+}
+
+#locationInput, #interestsInput, #friendSearchInput {
+	width: 504px;
+}
+
+.createdby a {
+	text-decoration: none;
+}
+
+.gopherUsername {
+	margin-bottom: 9px;
+}
+
+.searchEntry img {
+	margin-bottom: 9px;
+}
+
+.searchName {
+	font-weight: bold;
+}
+
+.searchUsername a {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#gopherProfileContainer, #friendsListContainer {
+	margin-bottom: 18px;
+}
+
+#gopherProfileContainer {
+	margin-left: 18px;
+}

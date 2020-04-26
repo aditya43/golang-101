@@ -1,0 +1,44 @@
+<h1>{{.PageTitle}}</h1>
+
+<div class="formContainer">
+
+
+<div id="gopherProfileContainer">
+
+	<div id="gopherPhoto">
+		{{if eq .ProfileImagePath ""}}
+		<img id="profileImage" src="/static/images/gogopher.png" height="180" >
+		{{else}}
+		<img id="profileImage" src="{{.ProfileImagePath}}" height="180" >
+		{{end}}
+	</div>
+
+	<div id="gopherUsername">
+	<h1 class="gopherUsernameHeading">@{{.Username}}</h1>
+	</div>
+
+	<div id="gopherAbout">
+	<h2>About</h2>
+	{{.About}}
+	</div>
+
+	<div id="gopherLocation">
+	<h2>Location</h2>
+	{{.Location}}
+	</div>
+
+	<div id="gopherInterests">
+	<h2>Interests</h2>
+	{{.Interests}}
+	</div>
+
+</div>
+
+<div id="feedContainer">
+
+</div>
+
+<div id="followingContainer">
+
+</div>
+

@@ -1,0 +1,28 @@
+{{template "header.html" .}}
+
+	<div class="formContainer">
+	<form action="/login" method="POST" class="pure-form pure-form-aligned">
+		<fieldset>
+
+			<div class="pure-control-group">
+				<label for="name">Username</label>
+				<input id="username" type="text" placeholder="Username" name="username" value="{{.Fields.username}}">
+				<span id="usernameError" class="pure-form-message-inline">{{.Errors.usernameError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="password">Password</label>
+				<input id="password" type="password" placeholder="Password" name="password" value="">
+				<span id="passwordError" class="pure-form-message-inline">{{.Errors.passwordError}}</span>
+			</div>
+
+			<div class="pure-controls">
+				<input class="pure-button pure-button-primary" type="submit" value="Log In" />
+			</div>
+
+		</fieldset>
+	</form>
+	</div>
+
+
+{{template "footer.html" .}}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/css/gopherface.css" />
+</head>
+<body>
+<h1>Social Media Post Example</h1>
+
+<div class="smpostContainer">
+
+	<div class="caption">
+		{{.Caption}}
+	</div>
+
+	<div class="author">
+		<br/>
+		<span class="createdby">{{.CreatedBy}} {{.AuthorMoodEmoji}}</span><br/>
+		<span class="creationtime">{{.TimeCreated}}</span>
+	</div>
+
+	<div class="imagePreview">
+		<a target="_blank" href="{{.URL}}"><img src="{{.ImageURI}}"></a>
+	</div>
+
+	<div class="msgBody">
+		{{.MessageBody}}
+	</div>
+
+
+
+</div>
+
+
+</body>
+</html>

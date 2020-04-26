@@ -1,0 +1,54 @@
+{{template "header.html" .}}
+
+<h1>{{.PageTitle}}</h1>
+
+	<div class="formContainer">
+	<form action="/signup" method="POST" class="pure-form pure-form-aligned">
+		<fieldset>
+
+			<div class="pure-control-group">
+				<label for="name">Username</label>
+				<input id="username" type="text" placeholder="Username" name="username" value="{{.Fields.username}}">
+				<span id="usernameError" class="pure-form-message-inline">{{.Errors.usernameError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="firstName">First Name</label>
+				<input id="firstName" type="text" placeholder="First Name" name="firstName" value="{{.Fields.firstName}}">
+				<span id="firstNameError" class="pure-form-message-inline">{{.Errors.firstNameError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="lastName">Last Name</label>
+				<input id="lastName" type="text" placeholder="Last Name" name="lastName" value="{{.Fields.lastName}}">
+				<span id="lastNameError" class="pure-form-message-inline">{{.Errors.lastNameError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="email">E-mail Address</label>
+				<input id="email" type="text" placeholder="E-mail Address" name="email" value="{{.Fields.email}}">
+				<span id="emailError" class="pure-form-message-inline">{{.Errors.emailError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="password">Password</label>
+				<input id="password" type="password" placeholder="Password" name="password" value="{{.Fields.password}}">
+				<span id="passwordError" class="pure-form-message-inline">{{.Errors.passwordError}}</span>
+			</div>
+
+			<div class="pure-control-group">
+				<label for="name">Confirm Password</label>
+				<input id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword" value="{{.Fields.confirmPassword}}">
+				<span id="confirmPasswordError" class="pure-form-message-inline">{{.Errors.confirmPasswordError}}</span>
+			</div>
+
+			<div class="pure-controls">
+				<input class="pure-button pure-button-primary" type="submit" value="Sign Up" />
+			</div>
+
+		</fieldset>
+	</form>
+	</div>
+
+
+{{template "footer.html" .}}

@@ -1,0 +1,22 @@
+{{if not . }}
+No gophers were found with the specified search term.
+{{else}}
+		<form id="searchResults" class="pure-form">
+{{range .}}
+		<div class="searchEntry">
+			<img height="108" class="searchImage" src="{{.ProfileImagePath}}">
+			<div class="gopherUsername"><span class="searchUsername"><a href="/profile/{{.Username}}">@{{.Username}}</a></span></div>
+
+			<div class="gopherName"><span class="searchName">{{.FirstName}} {{.LastName}}</span></div>
+			<div class="gopherLocation"><span class="searchLocation">{{.Location}}</span></div>
+
+			<div class="gopherActionButton">
+			<fieldset class="pure-group">
+				<button data-uuid="{{.UUID}}" type="button" class="followButton pure-button pure-button-primary">Follow</button>
+			</fieldset>
+			</div>
+		</div>
+<hr />
+{{end}}
+		</form>
+{{end}}

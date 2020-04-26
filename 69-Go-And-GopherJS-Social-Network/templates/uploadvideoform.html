@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Upload Video</title>
+<link rel="stylesheet" type="text/css" href="/static/css/pure.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/gopherface.css" />
+</head>
+<body>
+<h1>GopherFace - Upload Video</h1>
+
+<div class="formContainer uploadFormContainer">
+<form enctype="multipart/form-data" action="/upload-video" method="post" class="pure-form pure-form-aligned">
+<fieldset>
+
+	<fieldset>
+	<label for="videofile">Video File</label>
+	<input id="videofile" type="file" name="videofile" />
+	</fieldset>
+
+	<input type="submit" class="pure-button pure-input-1-2 pure-button-primary" value="Upload Video">
+
+<fieldset>
+</form>
+</div>
+
+</body>
+</html>

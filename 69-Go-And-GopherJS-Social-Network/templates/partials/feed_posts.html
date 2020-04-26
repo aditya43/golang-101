@@ -1,0 +1,28 @@
+{{if not . }}
+No posts are available.
+{{else}}
+{{range .}}
+<div class="smpostContainer">
+
+	<div class="authorImage">
+	<img width="96" src="{{.ProfileImagePath}}">
+	</div>
+
+	<div class="caption">
+		{{.Caption}}
+	</div>
+
+	<div class="author">
+		<br/>
+		<span class="createdby"><a href="/profile/{{.Username}}">@{{.Username}}</a></span>
+		<span class="authorMood"> {{.AuthorMoodEmoji}}</span><br/>
+		<span class="creationtime">{{.TimeCreated}}</span>
+	</div>
+
+	<div class="msgBody">
+		{{.MessageBody}}
+	</div>
+
+</div>
+{{end}}
+{{end}}

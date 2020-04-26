@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>GopherFace - New Post</title>
+<link rel="stylesheet" type="text/css" href="/static/css/pure.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/gopherface.css" />
+</head>
+<body>
+	<h1>GopherFace - New Post</h1>
+
+	<div class="formContainer smpostFormContainer">
+		<form action="/postpreview" method="post" class="pure-form pure-form-aligned">
+		<fieldset>
+
+		<fieldset class="pure-control-group">
+			<input type="text" class="pure-input-1-2" placeholder="Caption" name="caption" value="{{.Fields.caption}}">
+			<span id="confirmPasswordError" class="pure-form-message-inline">{{.Errors.captionError}}</span>
+		</fieldset>
+
+		<fieldset class="pure-control-group">
+			<textarea id="messageBody" class="pure-input-1-2" placeholder="What's on your mind, Gopher?" name="messageBody">{{.Fields.messageBody}}</textarea>
+			<span id="messageBodyError" class="pure-form-message-inline">{{.Errors.messageBodyError}}</span>
+		</fieldset>
+
+		<fieldset class="pure-group">
+		<label for="mood">Mood</label>
+		<select id="mood" name="mood"> 
+		   {{range $key, $value := .Moods}}
+		   <option value="{{ $value }}" {{if eq $value $.CurrentMood}}selected{{end}}>{{index $.MoodEmoji $key}} {{ $key }}</option>
+		   {{end}}
+		</select>
+		</fieldset>
+
+		<input type="submit" class="pure-button pure-input-1-2 pure-button-primary" value="Post">
+
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
+
+

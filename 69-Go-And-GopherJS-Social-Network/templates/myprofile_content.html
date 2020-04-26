@@ -1,0 +1,60 @@
+<h1>{{.PageTitle}}</h1>
+
+<div class="formContainer">
+
+	<form class="pure-form" id="userProfileForm">
+
+		<fieldset class="pure-group">
+			<h2 id="usernameTitle">@{{.Username}}</h2>
+		</fieldset>
+
+		<fieldset class="pure-control-group">
+			<div id="profileImageContainer">
+
+				{{if eq .ProfileImagePath ""}}
+				<img id="profileImage" src="/static/images/gogopher.png" height="108" >
+				{{else}}
+				<img id="profileImage" src="{{.ProfileImagePath}}" height="108" >
+				{{end}}
+
+			</div>
+		</fieldset>
+
+		<fieldset class="pure-group">
+			<div class="upload-btn-wrapper">
+			  <button class="pure-button pure-button-primary">Change Image</button>
+			  <input type="file" id="imagefile" name="imagefile" accept="image/*" />
+			</div>
+		</fieldset>
+
+		<fieldset class="pure-control-group">
+			<textarea id="aboutTextArea" name="aboutTextArea" placeholder="Write about yourself in this text box.">{{.About}}</textarea>
+			<span id="aboutTextAreaError" class="formError pure-form-message-inline">{{.Form.Errors.aboutTextArea}}</span>
+		</fieldset>
+
+		<fieldset class="pure-control-group">
+			<input class="textInputField" id="locationInput" name="locationInput" type="text" placeholder="Location" value="{{.Location}}" />
+			<span id="locationInputError" class="formError pure-form-message-inline">{{.Form.Errors.locationInput}}</span>
+
+		</fieldset>
+
+		<fieldset class="pure-control-group">
+			<input class="textInputField" id="interestsInput" name="interestsInput" type="text" placeholder="Interests" value="{{.Interests}}" />
+			<span id="interestsInputError" class="formError pure-form-message-inline">{{.Form.Errors.interestsInput}}</span>
+
+		</fieldset>
+
+		<fieldset class="pure-group">
+			<button id="saveProfileButton" type="button" class="pure-button pure-button-primary">Save</button>
+		</fieldset>
+
+	</form>
+
+</div>
+
+
+<div id="friendsListContainer">
+
+
+</div>
+

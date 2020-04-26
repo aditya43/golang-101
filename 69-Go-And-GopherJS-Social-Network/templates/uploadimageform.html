@@ -1,0 +1,20 @@
+{{template "gatedheader.html" .}}
+
+<p>&nbsp;</p>
+
+<div class="formContainer uploadFormContainer">
+<form enctype="multipart/form-data" action="/upload-image" method="post" class="pure-form pure-form-aligned">
+<fieldset>
+
+	<fieldset>
+	<label for="imagefile">Image File</label>
+	<input id="imagefile" type="file" name="imagefile" />
+	</fieldset>
+
+	<input type="submit" class="pure-button pure-input-1-2 pure-button-primary" value="Upload Image">
+
+<fieldset>
+</form>
+</div>
+
+{{template "footer.html" .}}
