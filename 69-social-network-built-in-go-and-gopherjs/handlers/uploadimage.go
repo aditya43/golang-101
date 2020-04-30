@@ -39,7 +39,7 @@ func ProcessUploadImage(w http.ResponseWriter, r *http.Request, u *UploadImageFo
 	if fileheader != nil {
 
 		extension := filepath.Ext(fileheader.Filename)
-		r.ParseMultipartForm(32 << 20)
+		_ = r.ParseMultipartForm(32 << 20)
 
 		defer file.Close()
 
@@ -52,13 +52,13 @@ func ProcessUploadImage(w http.ResponseWriter, r *http.Request, u *UploadImageFo
 		}
 
 		defer f.Close()
-		io.Copy(f, file)
+		_, _ = io.Copy(f, file)
 
 		// Note: Moved the thumbnail generation logic (commented out code block below) to the
 		// ImageResizeTask object in the tasks package.
 		thumbnailResizeTask := tasks.NewImageResizeTask(imageFilePathWithoutExtension, extension)
 
-		if shouldProcessThumbnailAsynchronously == true {
+		if shouldProcessThumbnailAsynchronously {
 
 			asyncq.TaskQueue <- thumbnailResizeTask
 
@@ -75,7 +75,7 @@ func ProcessUploadImage(w http.ResponseWriter, r *http.Request, u *UploadImageFo
 		RenderGatedTemplate(w, WebAppRoot+"/templates/imagepreview.html", m)
 
 	} else {
-		w.Write([]byte("Failed to process uploaded file!"))
+		_, _ = w.Write([]byte("Failed to process uploaded file!"))
 	}
 }
 
