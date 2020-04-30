@@ -36,7 +36,7 @@ func ProcessUploadVideo(w http.ResponseWriter, r *http.Request, u *UploadVideoFo
 	if fileheader != nil {
 
 		extension := filepath.Ext(fileheader.Filename)
-		r.ParseMultipartForm(32 << 20)
+		_ = r.ParseMultipartForm(32 << 20)
 
 		defer file.Close()
 
@@ -49,7 +49,7 @@ func ProcessUploadVideo(w http.ResponseWriter, r *http.Request, u *UploadVideoFo
 		}
 
 		defer f.Close()
-		io.Copy(f, file)
+		_, _ = io.Copy(f, file)
 
 		thumbImageFilePath := videoFilePathWithoutExtension + "_thumb.png"
 		command := "ffmpeg -y  -i " + videoFilePathWithoutExtension + extension + " -s 430x372 -f mjpeg -vframes 1 -ss 3 " + thumbImageFilePath

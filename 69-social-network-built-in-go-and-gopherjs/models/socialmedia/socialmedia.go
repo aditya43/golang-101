@@ -39,7 +39,7 @@ type Post struct {
 	UUID             string    `json:"uuid"`
 	RawMoodValue     int       `json:"rawMoodValue"`
 	Username         string    `json:"username"`
-	ProfileImagePath string    `json: "profileImagePath"`
+	ProfileImagePath string    `json:"profileImagePath"`
 	Caption          string    `json:"caption"`
 	MessageBody      string    `json:"messageBody"`
 	URL              string    `json:"url"`
@@ -48,7 +48,7 @@ type Post struct {
 	Keywords         []string  `json:"keywords"`
 	Likers           []string  `json:"likers"`
 	AuthorMood       MoodState `json:"authorMood"`
-	AuthorMoodEmoji  string    `json:authorMoodEmoji"`
+	AuthorMoodEmoji  string    `json:"authorMoodEmoji"`
 }
 
 // Map that holds the various mood states with keys to serve as
