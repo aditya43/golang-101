@@ -5,8 +5,6 @@ import (
 )
 
 func FooHandler(w http.ResponseWriter, r *http.Request) {
-
 	fooID := r.Context().Value("fooID").(string)
-	w.Write([]byte(fooID))
-
+	_, _ = w.Write([]byte(fooID))
 }
