@@ -47,7 +47,7 @@ func ValidateLoginForm(w http.ResponseWriter, r *http.Request, l *LoginForm, e *
 	}
 
 	// Check username syntax
-	if validationkit.CheckUsernameSyntax(r.FormValue("username")) == false {
+	if !validationkit.CheckUsernameSyntax(r.FormValue("username")) {
 
 		usernameErrorMessage := "The username entered has an improper syntax."
 		if _, ok := l.Errors["usernameError"]; ok {
@@ -72,7 +72,7 @@ func ProcessLoginForm(w http.ResponseWriter, r *http.Request, l *LoginForm, e *c
 	fmt.Println("auth result: ", authResult)
 
 	// Successful login, let's create a cookie for the user and redirect them to the feed route
-	if authResult == true {
+	if authResult {
 
 		sessionID := utility.GenerateUUID()
 		fmt.Println("sessid: ", sessionID)
