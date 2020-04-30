@@ -1,9 +1,9 @@
 package datastore
 
 import (
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
 )
 
 type Datastore interface {

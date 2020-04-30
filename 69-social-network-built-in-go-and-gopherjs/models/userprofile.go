@@ -1,6 +1,6 @@
 package models
 
-import "github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/forms"
+import "github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/forms"
 
 type UserProfile struct {
 	PageTitle        string `json:"pageTitle", bson:"pageTitle"`

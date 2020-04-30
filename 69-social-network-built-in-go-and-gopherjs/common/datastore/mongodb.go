@@ -3,7 +3,7 @@ package datastore
 import (
 	"fmt"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
 
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

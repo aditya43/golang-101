@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/authenticate"
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/utility"
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/validationkit"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/authenticate"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/utility"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/validationkit"
 )
 
 type LoginForm struct {

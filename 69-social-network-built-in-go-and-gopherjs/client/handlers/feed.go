@@ -7,13 +7,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
 
 	"honnef.co/go/js/dom"
 	"honnef.co/go/js/xhr"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/common"
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/forms"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/common"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/forms"
 	"github.com/gopherjs/gopherjs/js"
 
 	"go.isomorphicgo.org/go/isokit"

@@ -1,7 +1,7 @@
 package forms
 
 import (
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
 
 	"go.isomorphicgo.org/go/isokit"
 )

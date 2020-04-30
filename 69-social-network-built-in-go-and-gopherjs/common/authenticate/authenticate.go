@@ -4,9 +4,9 @@ import (
 	"log"
 	"strings"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/utility"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/utility"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
 )
 
 func VerifyCredentials(e *common.Env, username string, password string) bool {

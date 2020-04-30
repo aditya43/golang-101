@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/authenticate"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/authenticate"
 )
 
 func GatedContentHandler(next http.HandlerFunc) http.Handler {

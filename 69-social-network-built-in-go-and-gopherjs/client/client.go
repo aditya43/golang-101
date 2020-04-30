@@ -3,9 +3,9 @@ package main
 import (
 	"strings"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/handlers"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/handlers"
 
-	"github.com/github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/common"
+	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/client/common"
 
 	"go.isomorphicgo.org/go/isokit"
 	"honnef.co/go/js/dom"
