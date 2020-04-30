@@ -70,7 +70,7 @@ func ValidateSignUpForm(w http.ResponseWriter, r *http.Request, s *SignUpForm, e
 	}
 
 	// Check username syntax
-	if validationkit.CheckUsernameSyntax(r.FormValue("username")) == false {
+	if !validationkit.CheckUsernameSyntax(r.FormValue("username")) {
 
 		usernameErrorMessage := "The username entered has an improper syntax."
 		if _, ok := s.Errors["usernameError"]; ok {
@@ -81,7 +81,7 @@ func ValidateSignUpForm(w http.ResponseWriter, r *http.Request, s *SignUpForm, e
 	}
 
 	// Check e-mail address syntax
-	if validationkit.CheckEmailSyntax(r.FormValue("email")) == false {
+	if !validationkit.CheckEmailSyntax(r.FormValue("email")) {
 		emailErrorMessage := "The e-mail address entered has an improper syntax."
 		if _, ok := s.Errors["usernameError"]; ok {
 			s.Errors["emailError"] += " " + emailErrorMessage

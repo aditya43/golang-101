@@ -19,7 +19,7 @@ func TemplateBundleHandler(env *common.Env) http.Handler {
 			log.Print("encoding err: ", err)
 		}
 		w.Header().Set("Content-Type", "application/octet-stream")
-		w.Write(templateContentItemsBuffer.Bytes())
+		_, _ = w.Write(templateContentItemsBuffer.Bytes())
 	})
 
 }
