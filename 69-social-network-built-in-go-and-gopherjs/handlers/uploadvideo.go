@@ -68,7 +68,7 @@ func ProcessUploadVideo(w http.ResponseWriter, r *http.Request, u *UploadVideoFo
 		RenderTemplate(w, WebAppRoot+"/templates/videopreview.html", m)
 
 	} else {
-		w.Write([]byte("Failed to process uploaded file!"))
+		_, _ = w.Write([]byte("Failed to process uploaded file!"))
 	}
 }
 
