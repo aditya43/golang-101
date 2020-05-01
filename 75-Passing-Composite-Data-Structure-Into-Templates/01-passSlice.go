@@ -7,7 +7,9 @@ import (
 )
 
 func passSlice() {
-	fmt.Print("\n\n-------------------------------------------\n\n")
+	fmt.Print("\n-------------------------------------------\n")
+	fmt.Print("Slice")
+	fmt.Print("\n-------------------------------------------\n")
 
 	names := []string{"Aditya", "Nishi", "John", "Jane"}
 
