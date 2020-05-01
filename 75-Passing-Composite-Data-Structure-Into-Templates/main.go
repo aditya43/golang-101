@@ -13,4 +13,5 @@ func main() {
 	passMap()
 	passStruct()
 	passSliceOfStruct()
+	passStructOfSliceOfStruct()
 }

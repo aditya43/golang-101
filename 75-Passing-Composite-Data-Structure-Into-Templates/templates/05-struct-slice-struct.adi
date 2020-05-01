@@ -1,0 +1,10 @@
+Struct of Slice of Struct
+------------------
+{{range .People}}
+{{.}}
+{{end}}
+******************
+{{range .Cars}}
+{{.}}
+{{end}}
+------------------
