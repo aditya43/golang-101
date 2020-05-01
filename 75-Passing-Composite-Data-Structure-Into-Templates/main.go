@@ -11,4 +11,5 @@ func init() {
 func main() {
 	passSlice()
 	passMap()
+	passStruct()
 }
