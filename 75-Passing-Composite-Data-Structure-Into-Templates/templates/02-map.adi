@@ -1,0 +1,6 @@
+Map
+------------------
+{{range $index, $value := .}}
+Index: {{$index}} | Value: {{$value}}
+{{end}}
+------------------
