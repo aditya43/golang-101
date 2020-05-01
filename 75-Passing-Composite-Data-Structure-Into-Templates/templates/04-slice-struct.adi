@@ -1,0 +1,7 @@
+Slice Of Struct
+------------------
+{{range .}}
+Name: {{.Name}}
+Age: {{.Age}}
+{{end}}
+------------------
