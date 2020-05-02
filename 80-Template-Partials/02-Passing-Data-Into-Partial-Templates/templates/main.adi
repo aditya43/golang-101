@@ -1,0 +1,3 @@
+{{template "header" .Name}}
+Inside Main template
+{{template "footer" .Age}}
