@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passing Functions Into Templates</title>
+</head>
+<body>
+
+{{range .Wisdom}}
+{{uc .Name}}
+{{end}}
+
+{{range .Wisdom}}
+{{ft .Name}}
+{{end}}
+
+</body>
+</html>
