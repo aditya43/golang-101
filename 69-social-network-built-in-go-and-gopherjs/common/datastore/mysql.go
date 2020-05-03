@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/models"
 
 	_ "github.com/go-sql-driver/mysql"
 )

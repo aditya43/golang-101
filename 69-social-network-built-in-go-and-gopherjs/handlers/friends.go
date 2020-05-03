@@ -5,7 +5,7 @@ import (
 
 	"go.isomorphicgo.org/go/isokit"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common"
 )
 
 func FriendsHandler(env *common.Env) http.HandlerFunc {

@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// resp, err := http.Get("https://inancgumus.github.com/x/rosie.jpg")
-	resp, err := http.Get("https://github.com/aditya43/golang-core/tree/master/43-IO-Reusable-Streams/some-file.unknown")
+	resp, err := http.Get("https://github.com/aditya43/golang/tree/master/43-IO-Reusable-Streams/some-file.unknown")
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		return

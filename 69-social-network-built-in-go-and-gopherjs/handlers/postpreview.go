@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/models/socialmedia"
 )
 
 type PostForm struct {

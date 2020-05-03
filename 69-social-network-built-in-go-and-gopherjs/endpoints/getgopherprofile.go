@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common"
 )
 
 func GetGopherProfileEndpoint(env *common.Env) http.HandlerFunc {

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/aditya43/golang-core/20-Slices-In-Go/38-Limiting-The-Backing-Array-Sharing/api"
+	"github.com/aditya43/golang/20-Slices-In-Go/38-Limiting-The-Backing-Array-Sharing/api"
 )
 
 func main() {

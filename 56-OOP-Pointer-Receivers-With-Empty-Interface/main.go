@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/aditya43/golang-core/55-OOP-Pointer-Receivers-With-Interface/shapes"
+	"github.com/aditya43/golang/55-OOP-Pointer-Receivers-With-Interface/shapes"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/aditya43/golang-core/65-Web-Server/validationkit"
+	"github.com/aditya43/golang/65-Web-Server/validationkit"
 )
 
 func sayNamasteHandler(w http.ResponseWriter, r *http.Request) {

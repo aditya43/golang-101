@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/datastore"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common/datastore"
 	"go.isomorphicgo.org/go/isokit"
 )
 

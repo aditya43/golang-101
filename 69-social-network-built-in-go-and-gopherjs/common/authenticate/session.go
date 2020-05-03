@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/models"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/models"
 
 	"github.com/gorilla/sessions"
 )

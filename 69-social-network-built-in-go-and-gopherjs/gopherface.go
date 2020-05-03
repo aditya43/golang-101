@@ -4,11 +4,11 @@ import (
 	"log"
 	"os"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/datastore"
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/endpoints"
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/handlers"
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/middleware"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common/datastore"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/endpoints"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/handlers"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/middleware"
 	"go.isomorphicgo.org/go/isokit"
 
 	"net/http"

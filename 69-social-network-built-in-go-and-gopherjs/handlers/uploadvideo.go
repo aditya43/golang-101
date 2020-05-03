@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/utility"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common/utility"
 )
 
 type UploadVideoForm struct {

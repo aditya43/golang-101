@@ -4,12 +4,12 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common/authenticate"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common/authenticate"
 
 	"go.isomorphicgo.org/go/isokit"
 
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/common"
-	"github.com/aditya43/golang-core/69-social-network-built-in-go-and-gopherjs/forms"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/common"
+	"github.com/aditya43/golang/69-social-network-built-in-go-and-gopherjs/forms"
 )
 
 func MyProfileHandler(env *common.Env) http.HandlerFunc {

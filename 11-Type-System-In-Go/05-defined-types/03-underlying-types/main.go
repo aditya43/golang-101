@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/aditya43/golang-core/11-Type-System-In-Go/05-defined-types/03-underlying-types/weights"
+	"github.com/aditya43/golang/11-Type-System-In-Go/05-defined-types/03-underlying-types/weights"
 )
 
 type (

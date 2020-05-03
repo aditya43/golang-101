@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/aditya43/golang-core/57-Social-Media-Post-Custom-Type/socialmedia"
+	"github.com/aditya43/golang/57-Social-Media-Post-Custom-Type/socialmedia"
 )
 
 func main() {

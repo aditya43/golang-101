@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/aditya43/golang-core/05-Exporting/goversion"
+	"github.com/aditya43/golang/05-Exporting/goversion"
 )
 
 func main() {

@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/aditya43/golang-core/68-MVC-Using-Gorilla-Mux/endpoints"
-	"github.com/aditya43/golang-core/68-MVC-Using-Gorilla-Mux/handlers"
-	"github.com/aditya43/golang-core/68-MVC-Using-Gorilla-Mux/middleware"
+	"github.com/aditya43/golang/68-MVC-Using-Gorilla-Mux/endpoints"
+	"github.com/aditya43/golang/68-MVC-Using-Gorilla-Mux/handlers"
+	"github.com/aditya43/golang/68-MVC-Using-Gorilla-Mux/middleware"
 	ghandlers "github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )

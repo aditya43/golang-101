@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/aditya43/golang-core/57-Social-Media-Post-Custom-Type/socialmedia"
+	"github.com/aditya43/golang/57-Social-Media-Post-Custom-Type/socialmedia"
 )
 
 // Handler for displaying a social media post

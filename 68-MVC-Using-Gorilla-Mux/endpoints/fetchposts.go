@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/aditya43/golang-core/68-MVC-Using-Gorilla-Mux/models/socialmedia"
+	"github.com/aditya43/golang/68-MVC-Using-Gorilla-Mux/models/socialmedia"
 )
 
 func FetchPostsEndpoint(w http.ResponseWriter, r *http.Request) {
