@@ -34,7 +34,7 @@ func handle(conn net.Conn) {
 	defer conn.Close()
 
 	// instructions
-	_ = io.WriteString(conn, "\r\nIN-MEMORY DATABASE\r\n\r\n"+
+	_, _ = io.WriteString(conn, "\r\nIN-MEMORY DATABASE\r\n\r\n"+
 		"USE:\r\n"+
 		"\tSET key value \r\n"+
 		"\tGET key \r\n"+
