@@ -1,3 +1,5 @@
+// ListenAndServe accepts any type that implements Handler interface
+// Handler interface is a ServeHTTP Response Writer with a pointer to Request
 package main
 
 import (
