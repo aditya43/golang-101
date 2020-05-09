@@ -12,5 +12,6 @@ func (m hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-
+	var x hotdog
+	_ = x
 }
