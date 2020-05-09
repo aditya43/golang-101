@@ -4,6 +4,8 @@
 
 [http.Handler](https://godoc.org/net/http#Handler)
 ``` Go
+// What's a Handler interface?
+// It's a ServeHTTP Response Writer with a pointer to Request
 type Handler interface {
     ServeHTTP(ResponseWriter, *Request)
 }
@@ -30,10 +32,10 @@ func ListenAndServeTLS(addr, certFile, keyFile string, handler Handler) error
 # Request
 
 See [http.Request](https://godoc.org/net/http#Request) in the documentation.
- 
+
 Here it is with *most of the comments and some of the fields* stripped out:
 
-```go 
+```go
 type Request struct {
     Method string
     URL *url.URL
@@ -53,7 +55,7 @@ type Request struct {
     MultipartForm *multipart.Form
     // RemoteAddr allows HTTP servers and other software to record
 	// the network address that sent the request, usually for
-	// logging. 
+	// logging.
     RemoteAddr string
 }
 ```
@@ -81,7 +83,7 @@ Some interesting things you can do with a request:
 
 ```
 
-If we look at **ParseForm**, 
+If we look at **ParseForm**,
 
 ```go func (r *Request) ParseForm() error ```
 
@@ -128,7 +130,7 @@ type URL struct {
 
 ## Work with the HTTP header
 
-The ```http.Request``` type is a struct which has a ```Header``` field. 
+The ```http.Request``` type is a struct which has a ```Header``` field.
 
 From the documentation about the ```http.Header``` struct, we see that:
 
@@ -145,7 +147,7 @@ type Header map[string][]string
 type ResponseWriter interface {
     // Header returns the header map that will be sent by
     // WriteHeader. Changing the header after a call to
-    // WriteHeader (or Write) has no effect 
+    // WriteHeader (or Write) has no effect
     Header() Header
 
     // Write writes the data to the connection as part of an HTTP reply.
