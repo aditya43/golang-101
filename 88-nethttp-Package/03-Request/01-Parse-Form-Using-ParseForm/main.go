@@ -15,7 +15,7 @@ func (m hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 		log.Fatalln(err)
 	}
 
-	tpl.ExecuteTemplate(w, "index.gohtml", req.Form)
+	_ = tpl.ExecuteTemplate(w, "index.gohtml", req.Form)
 }
 
 var tpl *template.Template
@@ -26,5 +26,5 @@ func init() {
 
 func main() {
 	var d hotdog
-	http.ListenAndServe(":8080", d)
+	_ = http.ListenAndServe(":8080", d)
 }
