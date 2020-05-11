@@ -12,6 +12,7 @@ require (
 	github.com/gorilla/securecookie v1.1.1
 	github.com/gorilla/sessions v1.2.0
 	github.com/inancgumus/prettyslice v0.0.0-20190305220808-d802ba58098f
+	github.com/julienschmidt/httprouter v1.3.0
 	github.com/justinas/alice v1.2.0
 	github.com/mattn/go-runewidth v0.0.9
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9
