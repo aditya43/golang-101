@@ -6,11 +6,11 @@ import (
 )
 
 func d(res http.ResponseWriter, req *http.Request) {
-	io.WriteString(res, "dog dog dog")
+	_, _ = io.WriteString(res, "dog dog dog")
 }
 
 func c(res http.ResponseWriter, req *http.Request) {
-	io.WriteString(res, "cat cat cat")
+	_, _ = io.WriteString(res, "cat cat cat")
 }
 
 func main() {
@@ -18,5 +18,5 @@ func main() {
 	http.HandleFunc("/dog", d)
 	http.HandleFunc("/cat", c)
 
-	http.ListenAndServe(":8080", nil)
+	_ = http.ListenAndServe(":8080", nil)
 }
