@@ -24,6 +24,7 @@ func main() {
 	http.HandleFunc("/", home)
 	http.HandleFunc("/login", login)
 
+	// Passing "nil" to "ListenAndServe" will use default "ServeMux"
 	err := http.ListenAndServe(":8080", nil)
 
 	if err != nil {
