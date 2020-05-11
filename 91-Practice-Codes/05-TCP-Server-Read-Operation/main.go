@@ -32,12 +32,12 @@ func main() {
 			fmt.Println(ln)
 		}
 
-		defer conn.Close()
+		// defer conn.Close() // SA5003: defers in this infinite loop will never run (staticcheck)go-lint
 
 		// we never get here
 		// we have an open stream connection
 		// how does the above reader know when it's done?
 		fmt.Println("Code got here.")
-		io.WriteString(conn, "I see you connected.")
+		_, _ = io.WriteString(conn, "I see you connected.")
 	}
 }
