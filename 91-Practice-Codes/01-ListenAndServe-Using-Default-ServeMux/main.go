@@ -13,13 +13,13 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "foo ran")
+	_, _ = io.WriteString(w, "foo ran")
 }
 
 func bar(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "bar ran")
+	_, _ = io.WriteString(w, "bar ran")
 }
 
 func myName(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "hello mcleod")
+	_, _ = io.WriteString(w, "hello Aditya")
 }
