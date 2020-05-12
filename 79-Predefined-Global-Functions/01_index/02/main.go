@@ -21,7 +21,7 @@ func main() {
 		Lname string
 	}{
 		xs,
-		"McLeod",
+		"Aditya",
 	}
 
 	err := tpl.Execute(os.Stdout, data)
