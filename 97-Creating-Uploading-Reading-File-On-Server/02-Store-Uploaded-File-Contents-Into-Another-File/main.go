@@ -54,7 +54,7 @@ func adi(resp http.ResponseWriter, req *http.Request) {
 
 		defer destFile.Close()
 
-		_, err := destFile.Write(byteStream)
+		_, err = destFile.Write(byteStream)
 
 		if err != nil {
 			http.Error(resp, err.Error(), http.StatusInternalServerError)
