@@ -2,6 +2,7 @@ package main
 
 import (
 	"html/template"
+	"log"
 	"net/http"
 
 	uuid "github.com/satori/go.uuid"
@@ -27,12 +28,13 @@ func main() {
 	http.HandleFunc("/bar", bar)
 	http.HandleFunc("/signup", signup)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
-	http.ListenAndServe(":8080", nil)
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
 	u := getUser(req)
-	tpl.ExecuteTemplate(w, "index.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "index.gohtml", u)
 }
 
 func bar(w http.ResponseWriter, req *http.Request) {
@@ -41,7 +43,7 @@ func bar(w http.ResponseWriter, req *http.Request) {
 		http.Redirect(w, req, "/", http.StatusSeeOther)
 		return
 	}
-	tpl.ExecuteTemplate(w, "bar.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "bar.gohtml", u)
 }
 
 func signup(w http.ResponseWriter, req *http.Request) {
@@ -66,7 +68,7 @@ func signup(w http.ResponseWriter, req *http.Request) {
 		}
 
 		// create session
-		sID, _ := uuid.NewV4()
+		sID := uuid.NewV4()
 		c := &http.Cookie{
 			Name:  "session",
 			Value: sID.String(),
@@ -83,5 +85,5 @@ func signup(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	tpl.ExecuteTemplate(w, "signup.gohtml", nil)
+	_ = tpl.ExecuteTemplate(w, "signup.gohtml", nil)
 }
