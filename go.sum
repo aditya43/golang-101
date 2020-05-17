@@ -1,5 +1,6 @@
 github.com/aditya43/clear-shell-screen-golang v0.0.0-20200405065733-65938436211e h1:WpNoJTDh4q7QMH/fueuX3P/29D+UGdTxZWEcRcEvaek=
 github.com/aditya43/clear-shell-screen-golang v0.0.0-20200405065733-65938436211e/go.mod h1:vXIQKo/MVgYcH/9MmBMuzW71nCyVOC0kCQoidq/Ob6U=
+github.com/aditya43/golang v0.0.0-20200517124144-5eb7b79c7e45 h1:G0SKc000hfpyx5GHbDU9gL2dbgaIDP37v/YRMHrZHzI=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/color v1.9.0 h1:8xPHl4/q1VyqGIPif1F+1V3Y3lSmrq01EabUW3CoW5s=

@@ -12,7 +12,7 @@
 - `printer` library package:
     * Go to:
         ```sh
-        cd src/github.com/aditya43/golang/05-Exporting/printer/cmd/
+        cd src/github.com/aditya43/golang/005-Exporting/printer/cmd/
         ```
     * Run command:
         ```sh
@@ -21,7 +21,7 @@
 - `goversion` library package:
     * Go to:
         ```sh
-        cd src/github.com/aditya43/golang/05-Exporting/goversion/cmd/
+        cd src/github.com/aditya43/golang/005-Exporting/goversion/cmd/
         ```
     * Run command:
         ```sh
