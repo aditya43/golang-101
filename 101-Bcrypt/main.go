@@ -32,6 +32,7 @@ func compareHash(hash []byte, inputPassword []byte) {
 	err := bcrypt.CompareHashAndPassword(hash, inputPassword)
 
 	if err != nil {
+		// Password doesn't match
 		log.Fatal(err)
 	}
 }
