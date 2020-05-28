@@ -12,10 +12,12 @@ func main() {
 	waitGroup.Add(1) // 1 because we will be executing 1 goroutine
 	go func() {      // Goroutine
 		printStrFiveTimes("नमस्ते आदित्य") // Call our func inside goroutine
-		waitGroup.Done()                   // Notify waitGroup that our func is done executing
+
+		// Below line will decrement the counter in waitGroup
+		waitGroup.Done() // Notify waitGroup that our func is done executing
 	}()
 
-	waitGroup.Wait() // Wait for number of goroutines set under waitGroup
+	waitGroup.Wait() // Wait for goroutines to finish their execution
 }
 
 func printStrFiveTimes(str string) {
