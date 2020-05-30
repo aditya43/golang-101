@@ -4,8 +4,14 @@ go 1.23
 
 require (
 	github.com/aditya43/clear-shell-screen-golang v0.0.0-20200405065733-65938436211e
+	github.com/certifi/gocertifi v0.0.0-20200211180108-c7c1fbc02894 // indirect
+	github.com/cockroachdb/cockroach v20.1.1+incompatible
+	github.com/cockroachdb/errors v1.2.4 // indirect
+	github.com/cockroachdb/logtags v0.0.0-20190617123548-eb05cc24525f // indirect
 	github.com/fatih/color v1.9.0 // indirect
+	github.com/getsentry/raven-go v0.2.0 // indirect
 	github.com/go-sql-driver/mysql v1.5.0
+	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20200217142428-fce0ec30dd00
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.4
@@ -18,6 +24,7 @@ require (
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/satori/go.uuid v1.2.0
 	github.com/stretchr/testify v1.5.1 // indirect
 	github.com/tdewolff/minify v2.3.6+incompatible // indirect
