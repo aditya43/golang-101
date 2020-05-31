@@ -39,4 +39,5 @@ require (
 	honnef.co/go/js/dom v0.0.0-20190526011328-ebc4cf92d81f
 	honnef.co/go/js/util v0.0.0-20150216223935-96b8dd9d1621 // indirect
 	honnef.co/go/js/xhr v0.0.0-20150307031022-00e3346113ae
+	rsc.io/letsencrypt v0.0.3
 )
