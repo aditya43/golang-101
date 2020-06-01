@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"time"
 
@@ -45,13 +46,13 @@ func main() {
 	// added new route
 	http.HandleFunc("/checkUserName", checkUserName)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
-	http.ListenAndServe(":8080", nil)
+	log.Fatalln(http.ListenAndServe(":8080", nil))
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
 	u := getUser(w, req)
 	showSessions() // for demonstration purposes
-	tpl.ExecuteTemplate(w, "index.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "index.gohtml", u)
 }
 
 func bar(w http.ResponseWriter, req *http.Request) {
@@ -65,7 +66,7 @@ func bar(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 	showSessions() // for demonstration purposes
-	tpl.ExecuteTemplate(w, "bar.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "bar.gohtml", u)
 }
 
 func signup(w http.ResponseWriter, req *http.Request) {
@@ -109,7 +110,7 @@ func signup(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 	showSessions() // for demonstration purposes
-	tpl.ExecuteTemplate(w, "signup.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "signup.gohtml", u)
 }
 
 func login(w http.ResponseWriter, req *http.Request) {
@@ -147,7 +148,7 @@ func login(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 	showSessions() // for demonstration purposes
-	tpl.ExecuteTemplate(w, "login.gohtml", u)
+	_ = tpl.ExecuteTemplate(w, "login.gohtml", u)
 }
 
 func logout(w http.ResponseWriter, req *http.Request) {
@@ -167,7 +168,7 @@ func logout(w http.ResponseWriter, req *http.Request) {
 	http.SetCookie(w, c)
 
 	// clean up dbSessions
-	if time.Now().Sub(dbSessionsCleaned) > (time.Second * 30) {
+	if time.Since(dbSessionsCleaned) > (time.Second * 30) {
 		go cleanSessions()
 	}
 

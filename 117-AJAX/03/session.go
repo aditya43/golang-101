@@ -53,7 +53,7 @@ func cleanSessions() {
 	fmt.Println("BEFORE CLEAN") // for demonstration purposes
 	showSessions()              // for demonstration purposes
 	for k, v := range dbSessions {
-		if time.Now().Sub(v.lastActivity) > (time.Second * 30) {
+		if time.Since(v.lastActivity) > (time.Second * 30) {
 			delete(dbSessions, k)
 		}
 	}
