@@ -3,6 +3,7 @@ module github.com/aditya43/golang-core
 go 1.23
 
 require (
+	github.com/GoesToEleven/golang-web-dev v0.0.0-20191213230751-ef2d6fb2fe25
 	github.com/aditya43/clear-shell-screen-golang v0.0.0-20200405065733-65938436211e
 	github.com/certifi/gocertifi v0.0.0-20200211180108-c7c1fbc02894 // indirect
 	github.com/cockroachdb/cockroach v20.1.1+incompatible
