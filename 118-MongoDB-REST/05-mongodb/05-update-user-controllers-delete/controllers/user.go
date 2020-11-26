@@ -27,6 +27,8 @@ func (uc UserController) GetUser(w http.ResponseWriter, r *http.Request, p httpr
 		return
 	}
 
+	oid := bson.ObjectIdHex(id)
+
 	u := models.User{}
 
 	if err := uc.session.DB("go-web-dev-db").C("users").FindId(oid).One(&u); err != nil {
