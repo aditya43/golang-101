@@ -19,7 +19,7 @@ func GetUser(w http.ResponseWriter, req *http.Request) models.User {
 	// get cookie
 	ck, err := req.Cookie("session")
 	if err != nil {
-		sID, _ := uuid.NewV4()
+		sID := uuid.NewV4()
 		ck = &http.Cookie{
 			Name:  "session",
 			Value: sID.String(),
@@ -60,7 +60,7 @@ func Clean() {
 	fmt.Println("BEFORE CLEAN") // for demonstration purposes
 	Show()                      // for demonstration purposes
 	for k, v := range Sessions {
-		if time.Now().Sub(v.LastActivity) > (time.Second * 30) {
+		if time.Since(v.LastActivity) > (time.Second * 30) {
 			delete(Sessions, k)
 		}
 	}
