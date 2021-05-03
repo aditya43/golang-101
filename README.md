@@ -13,6 +13,7 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 ----------------------------------------
 
 ## Important Notes
+- [Uber Go Style Guide](/UBER-GO-STYLE-GUIDE.md?raw=false)
 - [Go Configurations](#go-configurations)
     ```diff
     + Environment Configurations
