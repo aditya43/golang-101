@@ -14,6 +14,10 @@ Open-sourced software licensed under the [MIT license](http://opensource.org/lic
 
 ## Important Notes
 - [Uber Go Style Guide](/UBER-GO-STYLE-GUIDE.md)
+- [Concurrency Using Golang](https://github.com/aditya43/golang_concurrency)
+- [REST Microservice | DDD | Gin Gonic | Testing](https://github.com/aditya43/golang_github_microservice)
+- [REST Microservice | DDD | Gorilla/Mux](https://github.com/aditya43/golang-bookstore_items-api)
+- [REST Microservice | MVC | Bad Practices](https://github.com/aditya43/golang-bookstore_users-api)
 - [Go Configurations](#go-configurations)
     ```diff
     + Environment Configurations
