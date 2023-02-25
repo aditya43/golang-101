@@ -3,16 +3,8 @@ module github.com/aditya43/golang-core
 go 1.23
 
 require (
-	github.com/GoesToEleven/golang-web-dev v0.0.0-20191213230751-ef2d6fb2fe25
 	github.com/aditya43/clear-shell-screen-golang v0.0.0-20200405065733-65938436211e
-	github.com/certifi/gocertifi v0.0.0-20200211180108-c7c1fbc02894 // indirect
-	github.com/cockroachdb/cockroach v20.1.1+incompatible
-	github.com/cockroachdb/errors v1.2.4 // indirect
-	github.com/cockroachdb/logtags v0.0.0-20190617123548-eb05cc24525f // indirect
-	github.com/fatih/color v1.9.0 // indirect
-	github.com/getsentry/raven-go v0.2.0 // indirect
 	github.com/go-sql-driver/mysql v1.5.0
-	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20200217142428-fce0ec30dd00
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.4
@@ -24,21 +16,27 @@ require (
 	github.com/mattn/go-runewidth v0.0.9
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
-	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/satori/go.uuid v1.2.0
+	go.isomorphicgo.org/go/isokit v0.0.0-20181019201904-781d8122d6e8
+	golang.org/x/crypto v0.1.0
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
+	honnef.co/go/js/dom v0.0.0-20190526011328-ebc4cf92d81f
+	honnef.co/go/js/xhr v0.0.0-20150307031022-00e3346113ae
+	rsc.io/letsencrypt v0.0.3
+)
+
+require (
+	github.com/fatih/color v1.9.0 // indirect
+	github.com/mattn/go-colorable v0.1.4 // indirect
+	github.com/mattn/go-isatty v0.0.11 // indirect
+	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/stretchr/testify v1.5.1 // indirect
 	github.com/tdewolff/minify v2.3.6+incompatible // indirect
 	github.com/tdewolff/parse v2.3.4+incompatible // indirect
 	github.com/tdewolff/test v1.0.6 // indirect
-	go.isomorphicgo.org/go/isokit v0.0.0-20181019201904-781d8122d6e8
-	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37
-	golang.org/x/sys v0.0.0-20200331124033-c3d80250170d // indirect
+	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/term v0.1.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
-	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
 	gopkg.in/yaml.v2 v2.2.8 // indirect
-	honnef.co/go/js/dom v0.0.0-20190526011328-ebc4cf92d81f
 	honnef.co/go/js/util v0.0.0-20150216223935-96b8dd9d1621 // indirect
-	honnef.co/go/js/xhr v0.0.0-20150307031022-00e3346113ae
-	rsc.io/letsencrypt v0.0.3
 )
